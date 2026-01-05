@@ -1,0 +1,223 @@
+project:
+  type: website
+  output-dir: _site
+  preview:
+    port: 4200
+    browser: true
+
+website:
+  title: "Course Title"
+  description: "A modern, elegant course template built with Quarto"
+  site-url: "https://yourusername.github.io/your-course"
+  repo-url: "https://github.com/yourusername/your-course"
+  repo-actions: [edit, issue]
+  
+  favicon: assets/images/favicon.png
+  
+  open-graph:
+    title: "Course Title"
+    description: "Course description"
+    image: assets/images/og-image.png
+  
+  twitter-card:
+    creator: "@yourusername"
+    image: assets/images/twitter-card.png
+  
+  navbar:
+    background: primary
+    logo: assets/images/logo.png
+    logo-alt: "Course Logo"
+    title: false  # Hide text title when logo is present
+    pinned: true
+    collapse-below: lg
+    left:
+      - text: "Home"
+        icon: house-fill
+        href: index.qmd
+      - text: "Chapters"
+        icon: book-fill
+        menu:
+          - text: "Getting Started"
+            icon: rocket-takeoff
+            href: chapters/example-chapter-01/index.qmd
+          - text: "---"
+          - text: "Advanced Topics"
+            icon: stars
+            href: chapters/example-chapter-02/index.qmd
+      - text: "Exercises"
+        icon: pencil-square
+        href: exercises/index.qmd
+      - text: "Resources"
+        icon: box-arrow-down
+        href: resources/index.qmd
+    right:
+      - icon: github
+        href: "https://github.com/yourusername/your-course"
+        aria-label: GitHub Repository
+      - icon: twitter
+        href: "https://twitter.com/yourusername"
+        aria-label: Twitter
+    
+    tools:
+      - icon: moon
+        text: "Dark Mode"
+        toggle-color-mode: true
+  
+  sidebar:
+    style: "floating"
+    background: light
+    logo: assets/images/logo.png
+    search: true
+    collapse-level: 2
+    pinned: true
+    contents:
+      - text: "🏠 Home"
+        href: index.qmd
+      - section: "📚 Course Content"
+        contents:
+          - text: "Chapter 1: Getting Started"
+            href: chapters/example-chapter-01/index.qmd
+          - text: "Chapter 2: Advanced Topics"
+            href: chapters/example-chapter-02/index.qmd
+      - section: "---"
+      - text: "✏️ Exercises"
+        href: exercises/index.qmd
+      - text: "📥 Resources"
+        href: resources/index.qmd
+      - text: "ℹ️ About"
+        href: about.qmd
+  
+  page-navigation: true
+  bread-crumbs: true
+  back-to-top-navigation: true
+  
+  page-footer:
+    background: light
+    left: |
+      <div class="footer-left">
+        © {{< meta year >}} {{< meta author >}}. 
+        Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+      </div>
+    center: |
+      <div class="footer-center">
+        Built with ❤️ using <a href="https://quarto.org/">Quarto</a>
+      </div>
+    right:
+      - icon: github
+        href: "https://github.com/yourusername/your-course"
+        aria-label: GitHub
+      - icon: twitter
+        href: "https://twitter.com/yourusername"
+        aria-label: Twitter
+      - icon: envelope
+        href: "mailto:your-email@example.com"
+        aria-label: Email
+
+format:
+  html:
+    theme: 
+      light: 
+        - cosmo
+        - assets/scss/custom-light.scss
+      dark:
+        - darkly
+        - assets/scss/custom-dark.scss
+    css: 
+      - assets/css/styles.css
+      - assets/css/components.css
+    
+    # Font Awesome integration
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    include-after-body:
+      - assets/js/custom.js
+    
+    # Table of contents
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    toc-location: right
+    toc-expand: 2
+    
+    # Sections
+    number-sections: true
+    number-depth: 3
+    section-divs: true
+    
+    # Code
+    code-copy: true
+    code-fold: false
+    code-tools: 
+      source: true
+      toggle: true
+      caption: "Code"
+    code-link: true
+    code-line-numbers: false
+    code-overflow: wrap
+    highlight-style: github
+    
+    # Figures and tables
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    fig-align: center
+    fig-responsive: true
+    
+    # Links
+    link-external-newwindow: true
+    link-external-icon: true
+    link-external-filter: '^(?:http:|https:)\/\/(?:www\.)?yourdomain\.com'
+    
+    # Navigation
+    smooth-scroll: true
+    anchor-sections: true
+    
+    # References
+    citations-hover: true
+    footnotes-hover: true
+    
+    # Appearance
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
+    
+    # Metadata
+    date-format: "MMMM D, YYYY"
+    lang: en
+    
+    # Syntax highlighting
+    syntax-definitions:
+      - assets/syntax/custom.xml
+
+execute:
+  freeze: auto
+  cache: true
+  echo: true
+  warning: false
+  message: false
+  error: false
+  eval: true
+
+# Bibliography
+bibliography: resources/references.bib
+csl: resources/citation-style.csl
+
+# Callout styling
+callout-appearance: default
+callout-icon: true
+
+# Editor
+editor: visual
+
+# Metadata
+author: "Your Name"
+year: 2025
+email: "your-email@example.com"
+institution: "Your Institution"
+license: "CC BY 4.0"
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+

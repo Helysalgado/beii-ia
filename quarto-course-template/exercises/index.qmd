@@ -1,0 +1,397 @@
+---
+title: "Exercises"
+subtitle: "Practice makes perfect"
+description: "Complete these exercises to reinforce your learning and build practical skills"
+---
+
+## Overview
+
+This section contains all course exercises organized by topic and difficulty. Each exercise is designed to reinforce concepts from the corresponding chapters.
+
+::: {.callout-tip}
+## How to Use Exercises
+
+1. **Read the instructions carefully** before starting
+2. **Try solving independently first** before looking at hints
+3. **Check your solution** against the provided solutions
+4. **Review and reflect** on what you learned
+
+:::
+
+---
+
+## Exercise Guidelines
+
+::: {.panel-tabset}
+
+## Difficulty Levels
+
+- <span class="badge badge-success">Beginner</span>: Fundamental concepts, guided practice
+- <span class="badge badge-warning">Intermediate</span>: Requires combining multiple concepts
+- <span class="badge badge-danger">Advanced</span>: Complex problems, minimal guidance
+
+## Time Estimates
+
+Time estimates are provided for planning purposes:
+
+- **Quick**: 15-30 minutes
+- **Standard**: 30-60 minutes
+- **Extended**: 1-2 hours
+- **Project**: 2+ hours
+
+## Submission
+
+Submit completed exercises through:
+
+- GitHub Pull Requests (preferred)
+- Learning Management System
+- Email (if specified)
+
+## Getting Help
+
+If you're stuck:
+
+1. Review relevant chapter material
+2. Check the hints provided
+3. Discuss with peers in forums
+4. Attend office hours
+5. Contact the instructor
+
+:::
+
+---
+
+## Exercise List
+
+### Module 1: Foundations
+
+::: {.card-grid}
+
+::: {.card .card-success}
+::: {.card-body}
+
+#### Exercise 1.1: Getting Started
+
+**Topic**: Basic concepts and setup  
+**Difficulty**: <span class="badge badge-success">Beginner</span>  
+**Time**: 30 minutes
+
+[Start Exercise →](#)
+
+:::
+:::
+
+::: {.card .card-success}
+::: {.card-body}
+
+#### Exercise 1.2: First Application
+
+**Topic**: Applying fundamental concepts  
+**Difficulty**: <span class="badge badge-success">Beginner</span>  
+**Time**: 45 minutes
+
+[Start Exercise →](#)
+
+:::
+:::
+
+::: {.card .card-warning}
+::: {.card-body}
+
+#### Exercise 1.3: Integration Challenge
+
+**Topic**: Combining multiple concepts  
+**Difficulty**: <span class="badge badge-warning">Intermediate</span>  
+**Time**: 60 minutes
+
+[Start Exercise →](#)
+
+:::
+:::
+
+:::
+
+### Module 2: Core Concepts
+
+::: {.card-grid}
+
+::: {.card .card-warning}
+::: {.card-body}
+
+#### Exercise 2.1: Data Processing
+
+**Topic**: Working with real data  
+**Difficulty**: <span class="badge badge-warning">Intermediate</span>  
+**Time**: 60 minutes
+
+[Start Exercise →](#)
+
+:::
+:::
+
+::: {.card .card-warning}
+::: {.card-body}
+
+#### Exercise 2.2: Analysis Task
+
+**Topic**: Statistical analysis  
+**Difficulty**: <span class="badge badge-warning">Intermediate</span>  
+**Time**: 90 minutes
+
+[Start Exercise →](#)
+
+:::
+:::
+
+::: {.card .card-danger}
+::: {.card-body}
+
+#### Exercise 2.3: Optimization Problem
+
+**Topic**: Advanced techniques  
+**Difficulty**: <span class="badge badge-danger">Advanced</span>  
+**Time**: 2 hours
+
+[Start Exercise →](#)
+
+:::
+:::
+
+:::
+
+### Module 3: Advanced Topics
+
+::: {.card-grid}
+
+::: {.card .card-danger}
+::: {.card-body}
+
+#### Exercise 3.1: Complex System
+
+**Topic**: System design and implementation  
+**Difficulty**: <span class="badge badge-danger">Advanced</span>  
+**Time**: 2 hours
+
+[Start Exercise →](#)
+
+:::
+:::
+
+::: {.card .card-danger}
+::: {.card-body}
+
+#### Exercise 3.2: Performance Tuning
+
+**Topic**: Optimization and efficiency  
+**Difficulty**: <span class="badge badge-danger">Advanced</span>  
+**Time**: 90 minutes
+
+[Start Exercise →](#)
+
+:::
+:::
+
+:::
+
+### Capstone Project
+
+::: {.card .card-primary}
+::: {.card-body}
+
+#### Final Project
+
+**Topic**: Comprehensive application  
+**Difficulty**: <span class="badge badge-danger">Advanced</span>  
+**Time**: Multiple weeks
+
+A comprehensive project that brings together all concepts learned throughout the course.
+
+**Deliverables**:
+- Project proposal
+- Implementation
+- Documentation
+- Presentation
+
+[View Project Details →](#)
+
+:::
+:::
+
+---
+
+## Exercise Categories
+
+Filter exercises by category:
+
+::: {.panel-tabset}
+
+## By Topic
+
+- **Topic 1**: Exercises 1.1, 1.2, 2.1
+- **Topic 2**: Exercises 1.3, 2.2, 3.1
+- **Topic 3**: Exercises 2.3, 3.2
+- **Integration**: Final Project
+
+## By Skill
+
+- **Data Manipulation**: Exercises 2.1, 2.2
+- **Algorithm Design**: Exercises 1.3, 2.3, 3.1
+- **Optimization**: Exercises 2.3, 3.2
+- **System Design**: Exercise 3.1, Final Project
+
+## By Difficulty
+
+**Beginner** (New learners):
+- Exercise 1.1: Getting Started
+- Exercise 1.2: First Application
+
+**Intermediate** (Some experience):
+- Exercise 1.3: Integration Challenge
+- Exercise 2.1: Data Processing
+- Exercise 2.2: Analysis Task
+
+**Advanced** (Experienced learners):
+- Exercise 2.3: Optimization Problem
+- Exercise 3.1: Complex System
+- Exercise 3.2: Performance Tuning
+- Final Project
+
+:::
+
+---
+
+## Progress Tracking
+
+Track your progress through the exercises:
+
+::: {.progress-container}
+::: {.progress-label}
+<span>Beginner Exercises</span>
+<span>0/2</span>
+:::
+::: {.progress}
+<div class="progress-bar progress-bar-success" style="width: 0%;"></div>
+:::
+:::
+
+::: {.progress-container}
+::: {.progress-label}
+<span>Intermediate Exercises</span>
+<span>0/3</span>
+:::
+::: {.progress}
+<div class="progress-bar progress-bar-warning" style="width: 0%;"></div>
+:::
+:::
+
+::: {.progress-container}
+::: {.progress-label}
+<span>Advanced Exercises</span>
+<span>0/3</span>
+:::
+::: {.progress}
+<div class="progress-bar progress-bar-danger" style="width: 0%;"></div>
+:::
+:::
+
+---
+
+## Tips for Success
+
+::: {.callout-tip}
+## Best Practices
+
+1. **Start Early**: Don't wait until the deadline
+2. **Read Thoroughly**: Understand requirements before coding
+3. **Plan First**: Outline your approach before implementing
+4. **Test Frequently**: Check your work as you go
+5. **Document Well**: Comment your code clearly
+6. **Ask Questions**: Don't struggle in silence
+7. **Learn from Mistakes**: Review solutions even if you get it right
+8. **Help Others**: Teaching reinforces your own learning
+
+:::
+
+---
+
+## Common Mistakes
+
+::: {.callout-warning}
+## Avoid These Pitfalls
+
+- **Skipping the instructions**: Read everything carefully
+- **Not testing edge cases**: Test with various inputs
+- **Poor time management**: Start early and pace yourself
+- **Ignoring style guidelines**: Follow coding standards
+- **Copying without understanding**: Make sure you understand the solution
+- **Not asking for help**: Reach out when stuck
+
+:::
+
+---
+
+## Additional Practice
+
+Looking for more practice? Check out these resources:
+
+::: {.card-grid}
+
+::: {.card}
+::: {.card-body}
+
+#### 💡 Challenge Problems
+
+Bonus exercises for extra practice and deeper exploration.
+
+[Browse Challenges →](#)
+
+:::
+:::
+
+::: {.card}
+::: {.card-body}
+
+#### 🏆 Competitions
+
+Participate in coding challenges and competitions.
+
+[View Competitions →](#)
+
+:::
+:::
+
+::: {.card}
+::: {.card-body}
+
+#### 👥 Study Groups
+
+Join peer study groups for collaborative problem-solving.
+
+[Find a Group →](#)
+
+:::
+:::
+
+:::
+
+---
+
+## Need Help?
+
+::: {.card}
+::: {.card-body}
+
+### Support Options
+
+**Office Hours**: [Schedule and location]  
+**Discussion Forum**: [Forum link]  
+**Email**: {{< meta email >}}  
+**Peer Tutoring**: [Information]
+
+<button class="btn btn-primary" onclick="window.location.href='mailto:{{< meta email >}}'">
+<i class="fas fa-envelope"></i> Contact Instructor
+</button>
+
+:::
+:::
+

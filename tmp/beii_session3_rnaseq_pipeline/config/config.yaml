@@ -1,0 +1,9 @@
+manifest: data/manifest.tsv
+results_dir: results
+log_file: logs/agent.log
+threads: 4
+steps:
+  qc: true
+  align: true
+  count: true
+  diffexpr: true

@@ -1,0 +1,689 @@
+---
+title: "Resources"
+subtitle: "Additional materials to support your learning"
+description: "Downloadable resources, datasets, code samples, and reference materials"
+---
+
+## Overview
+
+This page provides access to all supplementary materials for the course, including datasets, code examples, reference documents, and external resources.
+
+---
+
+## Downloadable Materials
+
+::: {.card-grid}
+
+::: {.card .card-primary}
+::: {.card-body}
+
+#### 📊 Datasets
+
+Sample datasets used throughout the course.
+
+- **Format**: CSV, JSON, Excel
+- **Size**: Various
+- **License**: Specified per dataset
+
+[Browse Datasets →](data/)
+
+:::
+:::
+
+::: {.card .card-info}
+::: {.card-body}
+
+#### 💻 Code Samples
+
+Complete code examples and templates.
+
+- **Languages**: Python, R, etc.
+- **Format**: .py, .R, .ipynb
+- **Documentation**: Included
+
+[Download Code →](scripts/)
+
+:::
+:::
+
+::: {.card .card-success}
+::: {.card-body}
+
+#### 📄 Slides & Notes
+
+Lecture slides and supplementary notes.
+
+- **Format**: PDF, PowerPoint
+- **Content**: Chapter summaries
+- **Updates**: Regular
+
+[Access Slides →](downloads/)
+
+:::
+:::
+
+::: {.card .card-warning}
+::: {.card-body}
+
+#### 📚 Reading Materials
+
+Articles, papers, and book chapters.
+
+- **Format**: PDF
+- **Access**: Open or provided
+- **Citations**: Included
+
+[View Readings →](#readings)
+
+:::
+:::
+
+:::
+
+---
+
+## Course Datasets
+
+### Available Datasets
+
+::: {.panel-tabset}
+
+## Sample Data 1
+
+**Description**: Brief description of the dataset  
+**Source**: Origin of the data  
+**Size**: 1.2 MB  
+**Format**: CSV  
+**License**: CC BY 4.0
+
+**Contains**:
+- Column 1: Description
+- Column 2: Description
+- Column 3: Description
+
+**Use Cases**:
+- Exercise 2.1
+- Chapter 4 examples
+- Final project (optional)
+
+<button class="btn btn-primary">
+<i class="fas fa-download"></i> Download (CSV)
+</button>
+
+## Sample Data 2
+
+**Description**: Brief description of the dataset  
+**Source**: Origin of the data  
+**Size**: 5.8 MB  
+**Format**: JSON  
+**License**: Public Domain
+
+**Contains**:
+- Field 1: Description
+- Field 2: Description
+- Field 3: Description
+
+**Use Cases**:
+- Exercise 3.2
+- Chapter 6 examples
+
+<button class="btn btn-primary">
+<i class="fas fa-download"></i> Download (JSON)
+</button>
+
+## Sample Data 3
+
+**Description**: Brief description of the dataset  
+**Source**: Origin of the data  
+**Size**: 12.4 MB  
+**Format**: Excel  
+**License**: MIT
+
+**Contains**:
+- Sheet 1: Description
+- Sheet 2: Description
+- Sheet 3: Description
+
+**Use Cases**:
+- Final project
+- Advanced exercises
+
+<button class="btn btn-primary">
+<i class="fas fa-download"></i> Download (XLSX)
+</button>
+
+:::
+
+---
+
+## Code Repository
+
+### Example Scripts
+
+All code examples are available in the course GitHub repository:
+
+::: {.card}
+::: {.card-body}
+
+#### <i class="fab fa-github"></i> GitHub Repository
+
+**Repository**: [github.com/yourusername/course-code](https://github.com/yourusername/course-code)
+
+**Structure**:
+```
+course-code/
+├── chapter-01/
+│   ├── example_01.py
+│   ├── example_02.py
+│   └── README.md
+├── chapter-02/
+│   ├── example_01.py
+│   └── notebook.ipynb
+├── utilities/
+│   ├── helper_functions.py
+│   └── data_loader.py
+└── README.md
+```
+
+<button class="btn btn-primary" onclick="window.location.href='https://github.com/yourusername/course-code'">
+<i class="fab fa-github"></i> View on GitHub
+</button>
+<button class="btn btn-outline">
+<i class="fas fa-download"></i> Download ZIP
+</button>
+
+:::
+:::
+
+### Code Templates
+
+::: {.card-grid}
+
+::: {.card}
+::: {.card-body}
+
+#### Python Template
+
+Basic Python script template with best practices.
+
+```python
+#!/usr/bin/env python3
+"""
+Script Description
+Author: Your Name
+Date: YYYY-MM-DD
+"""
+
+def main():
+    """Main function."""
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+<button class="btn btn-outline">
+<i class="fas fa-download"></i> Download
+</button>
+
+:::
+:::
+
+::: {.card}
+::: {.card-body}
+
+#### Jupyter Notebook Template
+
+Structured notebook template for analysis.
+
+```python
+# Title
+# Author: Your Name
+# Date: YYYY-MM-DD
+
+# Setup
+import pandas as pd
+import numpy as np
+
+# Load Data
+# ...
+
+# Analysis
+# ...
+
+# Results
+# ...
+```
+
+<button class="btn btn-outline">
+<i class="fas fa-download"></i> Download
+</button>
+
+:::
+:::
+
+:::
+
+---
+
+## Reference Materials {#readings}
+
+### Required Readings
+
+::: {.accordion}
+
+::: {.accordion-item}
+::: {.accordion-header}
+Chapter 1 Readings
+:::
+::: {.accordion-body}
+
+1. **Article Title** by Author Name
+   - Source: Journal/Book
+   - Year: 2024
+   - [Download PDF](link) | [External Link](link)
+
+2. **Another Article** by Author Name
+   - Source: Conference Proceedings
+   - Year: 2023
+   - [Download PDF](link) | [DOI](link)
+
+:::
+:::
+
+::: {.accordion-item}
+::: {.accordion-header}
+Chapter 2 Readings
+:::
+::: {.accordion-body}
+
+1. **Reading Title** by Author Name
+   - Description of content
+   - [Access Resource](link)
+
+:::
+:::
+
+::: {.accordion-item}
+::: {.accordion-header}
+Chapter 3 Readings
+:::
+::: {.accordion-body}
+
+1. **Resource Title** by Author Name
+   - Description of content
+   - [Access Resource](link)
+
+:::
+:::
+
+:::
+
+### Recommended Books
+
+::: {.card-grid}
+
+::: {.card}
+::: {.card-body}
+
+#### Book Title 1
+
+**Author**: Name  
+**Publisher**: Publisher Name  
+**Year**: 2024  
+**ISBN**: XXX-X-XXXX-XXXX-X
+
+Brief description of the book and why it's recommended.
+
+[View on Amazon](link) | [Publisher Site](link)
+
+:::
+:::
+
+::: {.card}
+::: {.card-body}
+
+#### Book Title 2
+
+**Author**: Name  
+**Publisher**: Publisher Name  
+**Year**: 2023  
+**ISBN**: XXX-X-XXXX-XXXX-X
+
+Brief description of the book and why it's recommended.
+
+[View on Amazon](link) | [Publisher Site](link)
+
+:::
+:::
+
+:::
+
+---
+
+## External Resources
+
+### Online Courses
+
+::: {.feature-box}
+::: {.feature-icon}
+<i class="fas fa-graduation-cap"></i>
+:::
+::: {.feature-content}
+
+#### Complementary Courses
+
+- **[Course Name 1](link)** - Platform Name
+  - Topics covered: Brief description
+  - Level: Beginner/Intermediate
+  
+- **[Course Name 2](link)** - Platform Name
+  - Topics covered: Brief description
+  - Level: Intermediate/Advanced
+
+:::
+:::
+
+### Video Tutorials
+
+::: {.feature-box}
+::: {.feature-icon}
+<i class="fas fa-video"></i>
+:::
+::: {.feature-content}
+
+#### Recommended Videos
+
+- **[Video Series 1](link)** - Creator Name
+  - Duration: X hours
+  - Topics: List of topics
+  
+- **[Video Series 2](link)** - Creator Name
+  - Duration: X hours
+  - Topics: List of topics
+
+:::
+:::
+
+### Documentation
+
+::: {.feature-box}
+::: {.feature-icon}
+<i class="fas fa-book"></i>
+:::
+::: {.feature-content}
+
+#### Official Documentation
+
+- **[Tool/Library 1](link)** - Official docs
+- **[Tool/Library 2](link)** - Official docs
+- **[Tool/Library 3](link)** - Official docs
+
+:::
+:::
+
+### Communities
+
+::: {.feature-box}
+::: {.feature-icon}
+<i class="fas fa-users"></i>
+:::
+::: {.feature-content}
+
+#### Online Communities
+
+- **[Forum 1](link)** - General discussion
+- **[Stack Overflow](link)** - Q&A
+- **[Reddit Community](link)** - News and discussion
+- **[Discord/Slack](link)** - Real-time chat
+
+:::
+:::
+
+---
+
+## Tools & Software
+
+### Required Software
+
+::: {.panel-tabset}
+
+## Python
+
+**Python 3.9+**
+
+Install from [python.org](https://www.python.org/downloads/)
+
+**Required Packages**:
+```bash
+pip install pandas numpy matplotlib scikit-learn jupyter
+```
+
+## R
+
+**R 4.2+** and **RStudio**
+
+- [Download R](https://www.r-project.org/)
+- [Download RStudio](https://www.rstudio.com/)
+
+**Required Packages**:
+```r
+install.packages(c("tidyverse", "ggplot2", "dplyr"))
+```
+
+## IDE
+
+**Recommended IDEs**:
+
+- [VS Code](https://code.visualstudio.com/) - Free, powerful
+- [PyCharm](https://www.jetbrains.com/pycharm/) - Python-focused
+- [JupyterLab](https://jupyter.org/) - Interactive notebooks
+
+:::
+
+### Installation Guides
+
+::: {.card-grid}
+
+::: {.card}
+::: {.card-body}
+
+#### Windows Setup
+
+Step-by-step guide for Windows users.
+
+[View Guide →](#)
+
+:::
+:::
+
+::: {.card}
+::: {.card-body}
+
+#### macOS Setup
+
+Step-by-step guide for Mac users.
+
+[View Guide →](#)
+
+:::
+:::
+
+::: {.card}
+::: {.card-body}
+
+#### Linux Setup
+
+Step-by-step guide for Linux users.
+
+[View Guide →](#)
+
+:::
+:::
+
+:::
+
+---
+
+## Cheat Sheets
+
+Quick reference guides for common tasks:
+
+::: {.card-grid}
+
+::: {.card}
+::: {.card-body}
+
+#### Python Cheat Sheet
+
+Essential Python syntax and functions.
+
+<button class="btn btn-outline">
+<i class="fas fa-download"></i> Download PDF
+</button>
+
+:::
+:::
+
+::: {.card}
+::: {.card-body}
+
+#### Pandas Cheat Sheet
+
+Data manipulation with Pandas.
+
+<button class="btn btn-outline">
+<i class="fas fa-download"></i> Download PDF
+</button>
+
+:::
+:::
+
+::: {.card}
+::: {.card-body}
+
+#### Git Cheat Sheet
+
+Version control commands.
+
+<button class="btn btn-outline">
+<i class="fas fa-download"></i> Download PDF
+</button>
+
+:::
+:::
+
+::: {.card}
+::: {.card-body}
+
+#### Command Line Cheat Sheet
+
+Terminal commands and shortcuts.
+
+<button class="btn btn-outline">
+<i class="fas fa-download"></i> Download PDF
+</button>
+
+:::
+:::
+
+:::
+
+---
+
+## Citation
+
+If you use materials from this course in your work, please cite:
+
+::: {.callout-note}
+## Citation Format
+
+**APA**:
+```
+Author, A. (Year). Course Title. Institution. https://course-url.com
+```
+
+**BibTeX**:
+```bibtex
+@misc{coursename2025,
+  author = {Your Name},
+  title = {Course Title},
+  year = {2025},
+  publisher = {Institution},
+  url = {https://course-url.com}
+}
+```
+
+:::
+
+---
+
+## License Information
+
+::: {.card}
+::: {.card-body}
+
+### Content License
+
+Course materials are licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**.
+
+**You are free to**:
+- Share and redistribute
+- Adapt and remix
+- Use commercially
+
+**Under these terms**:
+- Give appropriate credit
+- Link to the license
+- Indicate if changes were made
+
+### Code License
+
+Code examples are licensed under the **[MIT License](https://opensource.org/licenses/MIT)**.
+
+### Dataset Licenses
+
+Individual datasets may have different licenses. Check each dataset's documentation for specific terms.
+
+:::
+:::
+
+---
+
+## Contribute
+
+::: {.callout-tip}
+## Help Improve Resources
+
+Found an error? Have a suggestion? Want to contribute?
+
+- **Report Issues**: [GitHub Issues](link)
+- **Submit Resources**: [Contribution Guide](link)
+- **Improve Documentation**: [Edit on GitHub](link)
+
+:::
+
+---
+
+## Stay Updated
+
+::: {.card}
+::: {.card-body style="text-align: center;"}
+
+### Get Notifications
+
+Subscribe to get notified when new resources are added:
+
+<button class="btn btn-primary">
+<i class="fas fa-bell"></i> Subscribe to Updates
+</button>
+
+Or watch the repository on GitHub:
+
+<button class="btn btn-outline">
+<i class="fab fa-github"></i> Watch on GitHub
+</button>
+
+:::
+:::
+
