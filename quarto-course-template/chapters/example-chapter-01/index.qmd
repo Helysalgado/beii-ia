@@ -1,7 +1,6 @@
 ---
 title: "Chapter 1: Getting Started"
 subtitle: "Introduction to Course Concepts"
-author: "{{< meta author >}}"
 date: last-modified
 description: "An introduction to the fundamental concepts covered in this course"
 categories: [introduction, fundamentals, getting-started]

@@ -1,0 +1,44 @@
+    1  ls -lta
+    2  more .Rprofile
+    3  pwd
+    4  cd
+    5  cd Google\ Drive
+    6  ls
+    7  cd Mi\ unidad/
+    8  ls
+    9  cd github-repos-projects/
+   10  ls
+   11  cd lcg-cursos/
+   12  ls
+   13  cd diseno-python-II/
+   14  ls -lta
+   15  cd lecciones/
+   16  ls
+   17  cd python/
+   18  ls -lt
+   19  cd leccion_2/
+   20  ls -lta
+   21  devtools::install_github("rstudio/reticulate")
+   22  /opt/homebrew/bin/brew --version
+   23  /opt/homebrew/bin/pip --version
+   24  file /opt/homebrew/bin/python3
+   25  ls -lta
+   26  cd ..
+   27  ls -lta
+   28  whereis python3
+   29  exit
+   30  install.packages("reticulate")
+   31  exit
+   32  quarto update
+   33  brew upgrade quarto
+   34  cd git
+   35  pwd
+   36  cd ..
+   37  ls
+   38  mkdir linked-asana-jobs
+   39  cd linked-asana-jobs/
+   40  ls
+   41  pwd
+   42  ls
+   43  history -1000 > log.txt
+   44  history 1000 > log.txt

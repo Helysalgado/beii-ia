@@ -113,3 +113,5 @@ _freeze/
 *.pdf
 !README.pdf
 
+
+**/*.quarto_ipynb

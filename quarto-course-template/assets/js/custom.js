@@ -428,3 +428,19 @@
 
 })();
 
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".copy-prompt-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      const container = button.closest(".prompt-container");
+      const blockquote = container ? container.querySelector("blockquote") : null;
+      if (!blockquote) return;
+
+      const text = blockquote.innerText.trim();
+      navigator.clipboard.writeText(text);
+
+      const original = button.textContent;
+      button.textContent = "Copiado ✓";
+      setTimeout(() => (button.textContent = original), 1500);
+    });
+  });
+});

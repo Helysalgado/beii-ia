@@ -1,0 +1,11 @@
+---
+title: "Test Learning Objectives"
+---
+
+::: {.learning-objectives}
+### Objetivos
+
+- Objetivo 1
+- Objetivo 2
+:::
+

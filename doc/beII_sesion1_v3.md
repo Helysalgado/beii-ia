@@ -1,5 +1,7 @@
 # 🧠 BEII — Sesión 1
 
+https://chatgpt.com/g/g-695c8a32e1188191849612ffeef32851-cientia
+
 
 **Licenciatura en Ciencias Genómicas (LCG)**  
 **Duración del curso:** 8–12 horas totales  
@@ -1303,7 +1305,8 @@ Estos recursos explican **cómo estructurar prompts efectivos**, con ejemplos y 
   Documentación oficial con recomendaciones para controlar salidas de modelos GPT.  
   👉 https://platform.openai.com/docs/guides/prompt-engineering
 
-
+- MetaPrompting. Carolina Uribe
+https://www.linkedin.com/pulse/meta-prompting-la-f%C3%B3rmula-para-crear-prompts-1010-con-uribe-velasco-qpbde/
 
 ## B.2 Recursos académicos y marcos conceptuales
 

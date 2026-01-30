@@ -6,8 +6,8 @@ project:
     browser: true
 
 website:
-  title: "Course Title"
-  description: "A modern, elegant course template built with Quarto"
+  title: "Prompting Científico con Inteligencia Artificial"
+  description: "Pensamiento científico, validación y reproducibilidad con IA"
   site-url: "https://yourusername.github.io/your-course"
   repo-url: "https://github.com/yourusername/your-course"
   repo-actions: [edit, issue]
@@ -37,11 +37,17 @@ website:
       - text: "Chapters"
         icon: book-fill
         menu:
-          - text: "Getting Started"
+          - text: "Introducción al Prompting"
+            icon: brain
+            href: chapters/capitulo1/index.qmd
+          - text: "Sesión 1: Fundamentos de IA"
+            icon: brain
+            href: chapters/sesion-01-fundamentos/index.qmd
+          - text: "---"
+          - text: "Getting Started (Example)"
             icon: rocket-takeoff
             href: chapters/example-chapter-01/index.qmd
-          - text: "---"
-          - text: "Advanced Topics"
+          - text: "Advanced Topics (Example)"
             icon: stars
             href: chapters/example-chapter-02/index.qmd
       - text: "Exercises"
@@ -73,7 +79,21 @@ website:
     contents:
       - text: "🏠 Home"
         href: index.qmd
-      - section: "📚 Course Content"
+      - text: "🧠 Introducción al Prompting"
+        href: chapters/capitulo1/index.qmd
+      - section: "🧠 Sesión 1: Fundamentos de IA"
+        contents:
+          - text: "Introducción y Marco Epistemológico"
+            href: chapters/sesion-01-fundamentos/index.qmd
+          - text: "Prompting Científico"
+            href: chapters/sesion-01-fundamentos/prompting-cientifico.qmd
+          - text: "Patrones Avanzados"
+            href: chapters/sesion-01-fundamentos/patrones-avanzados.qmd
+          - text: "Glosario"
+            href: chapters/sesion-01-fundamentos/glosario.qmd
+          - text: "Recursos"
+            href: chapters/sesion-01-fundamentos/recursos.qmd
+      - section: "📖 Example Content"
         contents:
           - text: "Chapter 1: Getting Started"
             href: chapters/example-chapter-01/index.qmd
@@ -84,6 +104,8 @@ website:
         href: exercises/index.qmd
       - text: "📥 Resources"
         href: resources/index.qmd
+      - text: "🧩 Components"
+        href: components/component-examples.qmd
       - text: "ℹ️ About"
         href: about.qmd
   
@@ -95,7 +117,7 @@ website:
     background: light
     left: |
       <div class="footer-left">
-        © {{< meta year >}} {{< meta author >}}. 
+        © $year$ $author$. 
         Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
       </div>
     center: |
@@ -110,11 +132,13 @@ website:
         href: "https://twitter.com/yourusername"
         aria-label: Twitter
       - icon: envelope
-        href: "mailto:your-email@example.com"
+        href: "mailto:helysalgado@gmail.com"
         aria-label: Email
 
 format:
   html:
+    include-after-body:
+      - _includes/after-body.html
     theme: 
       light: 
         - cosmo
@@ -132,8 +156,8 @@ format:
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
-    include-after-body:
-      - assets/js/custom.js
+    #include-after-body:
+    #  - assets/js/custom.js
     
     # Table of contents
     toc: true
@@ -190,8 +214,8 @@ format:
     lang: en
     
     # Syntax highlighting
-    syntax-definitions:
-      - assets/syntax/custom.xml
+    # syntax-definitions:
+    #   - assets/syntax/custom.xml
 
 execute:
   freeze: auto
@@ -203,8 +227,8 @@ execute:
   eval: true
 
 # Bibliography
-bibliography: resources/references.bib
-csl: resources/citation-style.csl
+# bibliography: resources/references.bib
+# csl: resources/citation-style.csl
 
 # Callout styling
 callout-appearance: default
@@ -214,10 +238,10 @@ callout-icon: true
 editor: visual
 
 # Metadata
-author: "Your Name"
+author: "Heladia Salgado"
 year: 2025
-email: "your-email@example.com"
-institution: "Your Institution"
+email: "helysalgado@gmail.com"
+institution: "Centro de Ciencias Genómicas"
 license: "CC BY 4.0"
 license-url: "https://creativecommons.org/licenses/by/4.0/"
 

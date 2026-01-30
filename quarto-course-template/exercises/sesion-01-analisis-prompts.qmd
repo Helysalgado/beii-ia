@@ -1,0 +1,393 @@
+---
+title: "Ejercicio: Análisis Crítico de Prompts"
+subtitle: "Sesión 1 - Fundamentos Epistemológicos"
+date: last-modified
+description: "Mejora la calidad epistemológica de prompts científicos aplicando patrones avanzados"
+categories: [ejercicio, prompting, análisis-crítico]
+---
+
+::: {.callout-important}
+## 📝 Resumen del Ejercicio
+
+**Objetivo**: Mejorar la calidad epistemológica de un prompt  
+**Dificultad**: <span class="badge badge-warning">Intermedio</span>  
+**Tiempo Estimado**: 45-60 minutos  
+**Prerequisitos**: Haber completado las lecturas de Sesión 1
+
+:::
+
+## Objetivos de Aprendizaje {.unnumbered}
+
+Al completar este ejercicio, serás capaz de:
+
+- Identificar deficiencias epistemológicas en prompts científicos
+- Aplicar patrones avanzados para mejorar prompts
+- Justificar tus decisiones de diseño
+- Evaluar críticamente la calidad de un prompt
+
+
+
+## Contexto
+
+Has aprendido los **componentes esenciales de un prompt científico** y los **patrones epistemológicos avanzados**. Ahora es momento de aplicar ese conocimiento analizando y mejorando prompts reales.
+
+::: {.callout-note}
+## Antes de Empezar
+
+Este ejercicio no tiene una única respuesta correcta. Lo importante es:
+
+- **Justificar tus decisiones** con los patrones aprendidos
+- **Identificar problemas específicos** en cada prompt
+- **Proponer mejoras concretas** y defendibles
+
+:::
+
+
+
+## Instrucciones
+
+::: {.callout-important}
+## Tarea
+
+1. **Selecciona DOS prompts** de los cinco presentados a continuación (A-E)
+2. **Identifica al menos 3 problemas** epistemológicos en cada uno
+3. **Mejora cada prompt** incorporando **al menos dos patrones avanzados** del Patrón A.1 al A.10
+4. **Explica brevemente** cómo esos patrones mejoran la calidad científica del prompt
+
+:::
+
+### Formato de Entrega
+
+Crea un documento llamado `analisis_prompts_[tu_nombre].md` con:
+
+```markdown
+# Análisis Crítico de Prompts - [Tu Nombre]
+
+## Prompt Seleccionado 1: [Letra]
+
+### Problemas Identificados
+1. ...
+2. ...
+3. ...
+
+### Prompt Mejorado
+```text
+[Tu prompt mejorado aquí]
+```
+
+### Patrones Aplicados
+1. **Patrón A.X**: [Nombre del patrón]
+   - Justificación: ...
+
+2. **Patrón A.Y**: [Nombre del patrón]
+   - Justificación: ...
+
+## Prompt Seleccionado 2: [Letra]
+[Repetir estructura...]
+```
+
+
+## Prompts para Analizar
+
+### 🔴 Prompt A
+
+```text
+Eres un asistente experto en genética.
+
+Tengo una secuencia de DNA bacteriano recién ensamblada.
+
+Analiza la secuencia y dime qué genes contiene
+y cuáles son sus funciones.
+```
+
+::: {.callout-tip collapse="true"}
+## Pista para Prompt A
+
+Considera:
+- ¿Qué información falta sobre el contexto?
+- ¿Cómo validarías las afirmaciones sobre función?
+- ¿El prompt distingue entre homología y función?
+
+Patrones relevantes: A.1, A.2, A.4, A.7
+
+:::
+
+
+
+### 🟡 Prompt B
+
+```text
+Eres un asistente experto en bioinformática.
+
+Encontré un gen con alta similitud a otro gen conocido.
+
+Describe qué función tiene este gen
+y qué papel cumple en la célula.
+```
+
+::: {.callout-tip collapse="true"}
+## Pista para Prompt B
+
+Considera:
+- ¿"Alta similitud" es suficientemente específico?
+- ¿El prompt asume correctamente la relación similitud→función?
+- ¿Falta distinguir niveles de certeza?
+
+Patrones relevantes: A.2, A.3, A.4, A.5
+
+:::
+
+
+
+### 🟢 Prompt C
+
+```text
+Eres un asistente experto en bioinformática.
+
+Tengo un archivo FASTA con secuencias de DNA bacteriano.
+
+Describe qué aspectos de calidad revisarías antes de usar estos datos
+para análisis de motivos regulatorios.
+```
+
+::: {.callout-tip collapse="true"}
+## Pista para Prompt C
+
+Considera:
+- Este prompt es relativamente bueno, ¿qué le falta para ser excelente?
+- ¿Podría incluir verificación explícita?
+- ¿Falta delimitación del universo de datos?
+
+Patrones relevantes: A.6, A.7, A.8, A.9
+
+:::
+
+
+
+### 🟢 Prompt D
+
+```text
+Eres un asistente experto en genética comparativa.
+
+Un conjunto de genes está conservado
+entre varias especies bacterianas.
+
+Describe qué implicaciones funcionales
+tiene esta conservación.
+```
+
+::: {.callout-tip collapse="true"}
+## Pista para Prompt D
+
+Considera:
+- ¿Falta separar la pregunta científica de la tarea?
+- ¿Debería incluir explicaciones alternativas?
+- ¿El lenguaje es apropiadamente calibrado?
+
+Patrones relevantes: A.1, A.3, A.5
+
+:::
+
+
+
+### 🟢 Prompt E
+
+```text
+Eres un asistente experto en bioinformática.
+
+Realicé un análisis de enriquecimiento funcional
+y obtuve varios términos significativos.
+
+Describe qué significan estos resultados
+y cómo interpretarlos biológicamente.
+```
+
+::: {.callout-tip collapse="true"}
+## Pista para Prompt E
+
+Considera:
+- ¿Qué información crítica falta sobre el análisis?
+- ¿Cómo asegurar que la interpretación es verificable?
+- ¿Debería incluir riesgos de inferencia?
+
+Patrones relevantes: A.2, A.4, A.7, A.9
+
+:::
+
+
+
+## Criterios de Evaluación
+
+Tu análisis será evaluado según la siguiente rúbrica:
+
+| Criterio | Insuficiente (0-60%) | Adecuado (61-85%) | Excelente (86-100%) |
+|----------|----------------------|-------------------|---------------------|
+| **Contexto** | Ausente | Parcial | Claro y específico |
+| **Acotamiento** | Vago | Moderado | Estricto y justificado |
+| **Verificabilidad** | Nula | Implícita | Explícita con métodos |
+| **Supuestos** | Ignorados | Parcialmente identificados | Claramente declarados |
+| **Límites Inferenciales** | No considerados | Mencionados | Claramente delimitados |
+| **Justificación** | Ausente o superficial | Presente pero incompleta | Profunda y bien argumentada |
+
+: Rúbrica de Evaluación {#tbl-rubrica}
+
+
+
+## Entrega
+
+::: {.callout-important}
+## Detalles de Entrega
+
+**Formato**: Archivo Markdown (`.md`) o PDF  
+**Nombre**: `analisis_prompts_[tu_nombre].[md|pdf]`  
+**Método**: [Especificar según el curso]  
+**Fecha límite**: [Especificar]
+
+:::
+
+::: {.callout-tip}
+## Checklist Antes de Entregar
+
+- [ ] He seleccionado y analizado DOS prompts
+- [ ] Identifiqué al menos 3 problemas por prompt
+- [ ] Apliqué al menos 2 patrones avanzados por prompt
+- [ ] Justifiqué cada decisión
+- [ ] El documento está bien formateado y es legible
+- [ ] Revisé ortografía y claridad
+
+:::
+
+
+
+## Ejemplo de Análisis (Parcial)
+
+Para ayudarte a entender el nivel esperado, aquí hay un ejemplo parcial:
+
+::: {.card .card-info}
+::: {.card-header}
+Ejemplo: Análisis del Prompt A (Extracto)
+:::
+::: {.card-body}
+
+### Problema 1: Falta Delimitación del Universo de Datos
+
+El prompt no especifica:
+- Organismo ni cepa bacteriana
+- Ensamblado o versión del genoma
+- Calidad del ensamblado
+- Herramientas de anotación disponibles
+
+**Consecuencia**: La IA podría hacer suposiciones incorrectas sobre qué bases de datos o métodos aplicar.
+
+### Patrón Aplicado: A.7 (Delimitación Explícita)
+
+**En el prompt mejorado incluyo:**
+
+```text
+CONTEXTO:
+Genoma de Escherichia coli K-12 MG1655, recién ensamblado con PacBio HiFi.
+Cobertura: 100X. N50: 4.6 Mbp. Contigs: 1.
+No se ha realizado anotación funcional previa.
+```
+
+**Justificación**: Al delimitar explícitamente el organismo, tecnología y calidad, evito que la IA asuma datos inexistentes y puedo evaluar si sus recomendaciones son apropiadas para este contexto específico.
+
+:::
+:::
+
+
+
+## Recursos de Apoyo
+
+Para completar este ejercicio, consulta:
+
+- **[Patrones Avanzados](../chapters/sesion-01-fundamentos/patrones-avanzados.qmd)**: Referencia completa de los 10 patrones
+- **[Anatomía del Prompt](../chapters/sesion-01-fundamentos/prompting-cientifico.qmd)**: Componentes esenciales
+- **[Glosario](../chapters/sesion-01-fundamentos/glosario.qmd)**: Términos técnicos
+
+
+
+## Reflexión Final
+
+::: {.callout-note}
+## Después del Ejercicio
+
+Una vez completado, reflexiona:
+
+1. ¿Qué patrón te resultó más útil?
+2. ¿Qué tipo de problemas son más difíciles de identificar?
+3. ¿Cómo aplicarías esto en tu investigación?
+
+:::
+
+
+
+## Preguntas Frecuentes
+
+::: {.accordion}
+
+::: {.accordion-item}
+::: {.accordion-header}
+¿Puedo usar IA para completar este ejercicio?
+:::
+::: {.accordion-body}
+
+Puedes usar IA como herramienta de apoyo (verificar sintaxis, consultar conceptos), pero el análisis crítico y las justificaciones deben ser tuyas. El objetivo es desarrollar tu criterio científico, no generar texto automáticamente.
+
+:::
+:::
+
+::: {.accordion-item}
+::: {.accordion-header}
+¿Qué hago si encuentro más de 3 problemas?
+:::
+::: {.accordion-body}
+
+¡Excelente! Menciona todos los que identifiques. El mínimo de 3 es para asegurar profundidad, pero más problemas demuestran análisis más completo.
+
+:::
+:::
+
+::: {.accordion-item}
+::: {.accordion-header}
+¿Los prompts mejorados deben ser muy largos?
+:::
+::: {.accordion-body}
+
+No necesariamente. Un buen prompt científico es tan largo como necesario y tan corto como posible. Lo importante es que incluya los componentes esenciales y aplique los patrones de forma justificada.
+
+:::
+:::
+
+:::
+
+
+
+## Obtener Ayuda
+
+::: {.callout-tip}
+## ¿Necesitas Ayuda?
+
+- **Horario de consultas**: [Especificar]
+- **Foro de discusión**: [Link]
+- **Email instructor**: {{< meta email >}}
+
+No dudes en preguntar si algo no está claro.
+
+:::
+
+
+
+::: {.chapter-nav}
+
+::: {.chapter-nav-item .chapter-nav-prev}
+::: {.chapter-nav-label}
+Anterior
+:::
+::: {.chapter-nav-title}
+Recursos
+:::
+:::
+
+:::
+

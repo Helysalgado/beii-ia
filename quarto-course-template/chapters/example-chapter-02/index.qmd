@@ -1,7 +1,6 @@
 ---
 title: "Chapter 2: Advanced Topics"
 subtitle: "Building on the Fundamentals"
-author: "{{< meta author >}}"
 date: last-modified
 description: "Explore advanced concepts and techniques"
 categories: [advanced, techniques, applications]

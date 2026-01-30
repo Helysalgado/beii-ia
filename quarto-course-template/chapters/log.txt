@@ -1,0 +1,500 @@
+  506  ls
+  507  cd workflows
+  508  ls -lt
+  509  more ci.yml
+  510  rm ci.yml
+  511  cd ..
+  512  cd ..
+  513  git rm .github/workflows/ci.yml\ngit commit -m "Remove old CI workflow"\ngit push origin pipeline-hso
+  514  more .github/workflows/pipeline.yml
+  515  git add .github/workflows/pipeline.yml\ngit commit -m "Fix pipeline trigger to main"\ngit push origin pipeline-hso
+  516  git checkout main\ngit pull origin main\ngit merge pipeline-hso\ngit push origin main
+  517  treee
+  518  tree
+  519  tree .github
+  520  ls -lt
+  521  tree -L 4 /home/ubuntu/app\npm2 ls\npm2 logs backend --lines 80\ncurl http://localhost:3000
+  522  git branch\n
+  523  git status\n
+  524  open https://github.com/Helysalgado/AI4Devs-pipeline-2509_Rk
+  525  cd ..
+  526  ls -lt
+  527  more lidr.aws.pem
+  528  cd Google\ Drive/Mi\ unidad/github-repos-projects
+  529  ls
+  530  cd LIDR\ Academy-AI4Devs
+  531  ls -lt
+  532  cd AI4Devs-tdd-2509
+  533  ls -lt
+  534  cd frontend
+  535  npm run build
+  536  npm start
+  537  ps
+  538  npm start
+  539  lsof -i :3000
+  540  kill -9 44835
+  541  lsof -i :3000
+  542  lsof -i :3000
+  543  npm start
+  544  pwd
+  545  cd ..
+  546  cd ..
+  547  ls -lt
+  548  cd AI4Devs-qa-2509-R
+  549  ls -lt
+  550  cd backend
+  551  npm run dev
+  552  npm install
+  553  npm audit fix
+  554  npm install
+  555  npm run dev
+  556  lsof -ti:3010 | xargs kill -9
+  557  npm run dev
+  558  pwd
+  559  lsof -ti:3010 
+  560  kill -9 87349
+  561  lsof -ti:3010 | xargs kill -9
+  562  lsof -ti:3010 
+  563  npm run dev
+  564  bg
+  565  ls
+  566  npx prisma db seed
+  567  npx prisma db seed
+  568  npx prisma db seed
+  569  npx prisma db seed
+  570  npx prisma db seed
+  571  npx prisma db push --force-reset
+  572  npx tsx prisma/seed.ts
+  573  npm install -D tsx\nnpx tsx prisma/seed.ts
+  574  ps
+  575  kill -9 96392
+  576  npm run dev
+  577  lsof -ti:3010 | xargs kill -9
+  578  npm run dev
+  579  docker ps
+  580  docker stop ai4devs-tdd-2509-db-1
+  581  docker ps
+  582  docker rm ai4devs-tdd-2509-db-1
+  583  lsof -i :5432
+  584  cd cd "/Users/heladia/Library/CloudStorage/GoogleDrive-heladia@ccg.unam.mx/Mi unidad/github-repos-projects/LIDR Academy-AI4Devs/AI4Devs-pipeline-2509_Rk"\n
+  585  cd "/Users/heladia/Library/CloudStorage/GoogleDrive-heladia@ccg.unam.mx/Mi unidad/github-repos-projects/LIDR Academy-AI4Devs/AI4Devs-pipeline-2509_Rk"\n
+  586  echo "" >> README.md\n
+  587  git add README.md\n
+  588  git status
+  589  git commit -m "test: Pipeline con puerto PostgreSQL 5433"\n
+  590  git push origin pipeline-hso
+  591  brew tap hashicorp/tap
+  592  brew install hashicorp/tap/terraform
+  593  vi l.txt
+  594  vi llll.txt
+  595  sort llll.txt| uniq -c
+  596  vi macha2.txt
+  597  sort macha2.txt| uniq -c
+  598  vi sucursal.txt
+  599  sort sucursal.txt| uniq -c
+  600  vi brisket.txt
+  601  sort brisket.txt| uniq -c
+  602  vi pulled.txt
+  603  sort pulled.txt| uniq -c
+  604  vi bbq2.txt
+  605  sort bbq2.txt| unic -c
+  606  sort bbq2.txt| uniq -c
+  607  vi macha2.txt
+  608  vi macha3.txt
+  609  sort macha3.txt| uniq -c
+  610  cd Google\ Drive
+  611  ls
+  612  cd Mi\ unidad
+  613  ls
+  614  ls -lt | more
+  615  cd Personales/bodecatta
+  616  ls
+  617  cd PAQUETES-DIC-2025\n
+  618  ls
+  619  ls -lt
+  620  cd totales
+  621  ls
+  622  vi brisket_7b.txt
+  623  sort brisket_7b.txt| uniq -c
+  624  vi pulled_7b.txt
+  625  sort pulled_7b.txt| uniq -c
+  626  vi ribs_7b.txt
+  627  sort ribs_7b.txt| uniq -c
+  628  sort ribs_7b.txt| uniq -c
+  629  vi bbq_7b.txt
+  630  sort bbq_7b.txt| uniq -c
+  631  vi macha_7b.txt
+  632  sot macha_7b.txt| uniq -c
+  633  sort macha_7b.txt| uniq -c
+  634  vi brisket_park.txt
+  635  vi brisket_park.txt
+  636  sort brisket_park.txt| uniq -c
+  637  vi pulled_park.txt
+  638  sort pulled_park.txt| uniq -c
+  639  vi ribs_park.txt
+  640  sort ribs_park.txt| uniq -c
+  641  vi bbq_park.txt
+  642  sort bbq_park.txt| uniq -c
+  643  vi macha_park.txt
+  644  sort macha_park.txt| uniq -c
+  645  ls -lt
+  646  sort pulled_park.txt | uniq -c
+  647  rm pulled_park.txt
+  648  vi pulled_park.txt
+  649  sort pulled_park.txt| uniq -c
+  650  sort ribs_park.txt| uniq -c
+  651  sort macha_park.txt| uniq  -c
+  652  rm macha_park.txt
+  653  vi pulled_park.txt
+  654  vi macha_park.txt
+  655  sort macha_park.txt| uniq -c
+  656  sort macha_7b.txt| uniq -c
+  657  vi ribs_7b2.txt
+  658  sort ribs_7b2.txt| uniq -c
+  659  vi ex.txt
+  660  sort ex.txt| uniq -c
+  661  ls -lt
+  662  mkdir bdct
+  663  python3 -m venv venv
+  664  source venv/bin/activate\n
+  665  vi requirements
+  666  pwd
+  667  ls -lt
+  668  pwd
+  669  cd ..
+  670  ls -lt
+  671  mkdir filtros
+  672  cd filtros
+  673  vi 2024.txt
+  674  more 2024.txt
+  675  grep -i "Park"
+  676  grep -i "Park" 2024.txt
+  677  grep -i "Park" 2024.txt | cut -f2,4
+  678  grep -i "Park" 2024.txt | cut -f2,4 > pago_2024_thePark.txt
+  679  ls -lt
+  680  mv 2024.txt 24_2025.txt
+  681  mv pago_2024_thePark.txt depositos_24_2025_thePark.txt
+  682  ls
+  683  ls -lt
+  684  vi 31_2025.txt
+  685  grep -i "Park" 31_2025.txt 
+  686  wc 24_2025.txt
+  687  vi depositos_24_2025_thePark.txt
+  688  ls -lt
+  689  mv depositos_24_2025_thePark.txt depositos2025_thePark.txt
+  690  cut -f1 depositos2025_thePark.txt
+  691  grep -v "efectivo" depositos2025_thePark.txt
+  692  grep -iv "efectivo" depositos2025_thePark.txt 
+  693  grep -iv "efectivo" depositos2025_thePark.txt | cut -f1
+  694  cd Google\ Drive
+  695  ls
+  696  cd Unidades\ compartidas
+  697  ls
+  698  ls -lt
+  699  cd ls PGC-15.RegulonDB-Resources
+  700  ls PGC-15.RegulonDB-Resources
+  701  cd PGC-15.RegulonDB-Resources
+  702  cd Estadisticas-RegulonDB
+  703  ls -lt
+  704  cd Citas-a-regulonDB
+  705  ls -lt
+  706  vi journal.txt
+  707  sort journal.txt| uniq -c
+  708  sort journal.txt| uniq -c | wc
+  709  sort journal.txt| uniq -c | sort -nr | more
+  710  sort journal.txt| uniq -c | sort -nr | wc
+  711  sort journal.txt| uniq -c | sort -nr | wc
+  712  cd Google\ Drive
+  713  ls
+  714  cd Mi\ unidad
+  715  ls
+  716  ls -lt | more
+  717  cd github-repos-projects
+  718  ls
+  719  ls -lt | more
+  720  cd regulondb-docs
+  721  ls
+  722  ls -lt
+  723  grep 600 */*
+  724  la -lt
+  725  ls
+  726  ls -lt
+  727  grep 600  00_about_policies/*
+  728  $ curl -LsSf https://astral.sh/uv/install.sh | sh
+  729  curl -LsSf https://astral.sh/uv/install.sh | sh
+  730  source $HOME/.local/bin/env (sh, bash, zsh)\n
+  731  source $HOME/.local/bin/env (sh, bash, zsh)\n
+  732  source $HOME/.local/bin/env (sh, bash)\n
+  733  source $HOME/.local/bin/env (sh, bash)\n
+  734  uv --version
+  735  cd ..
+  736  pwd
+  737  node -v
+  738  npx -v
+  739  npx mcp-remote https://mcp.asana.com/sse
+  740  npx mcp-remote https://mcp.asana.com/sse
+  741  npx mcp-remote https://mcp.asana.com/sse
+  742  mkdir -p .cursor\nnano .cursor/mcp.json
+  743  npx mcp-remote https://mcp.asana.com/sse
+  744  curl -fsSL https://claude.ai/install.sh | bash
+  745  uv --version
+  746  uv python install 3.13
+  747  cd Google\ Drive
+  748  ls
+  749  cd Mi\ unidad/github-repos-projects/LIDR\ Academy-AI4Devs
+  750  ls
+  751  rmdir -r hola-agent
+  752  rmdir hola-agent
+  753  uv init hola_agent
+  754  cd hola_agent
+  755  ls -lt
+  756  ls -lta
+  757  uv venv
+  758  ls -lta
+  759  cd ..
+  760  ls -lt
+  761  cd ..
+  762  ls -lt
+  763  mkdir aboutme
+  764  cd aboutme
+  765  uv init
+  766  ls -lt
+  767  cd Google\ Drive
+  768  ls
+  769  cd Mi\ unidad
+  770  ls
+  771  ls -lt | more
+  772  cd github-repos-projects
+  773  ls -lt | more
+  774  cd bdct
+  775  ls -lt
+  776  ls
+  777  ls -lt
+  778  ls results
+  779  mkdir tmp
+  780  mv results tmp
+  781  ls -lt
+  782  ls tests
+  783  ls reportes_test
+  784  mc reportes_test tmp
+  785  mv reportes_test tmp
+  786  ls -lt
+  787  mkdir results
+  788  ls -lt
+  789  ls doc
+  790  mv doc tmp
+  791  mkdir doc
+  792  ls -lt
+  793  mkdir totales
+  794  cd totales
+  795  cat > brisket.txt
+  796  sort brisket.txt | uniq -c
+  797  pwd
+  798  cat > pulled_7b.txt
+  799  sort pulled_7b.txt| uniq -c
+  800  cd cd "/Users/heladia/Library/CloudStorage/GoogleDrive-heladia@ccg.unam.mx/Mi unidad/github-repos-projects/lcg-cursos/beii-ia/quarto-course-template"
+  801  cd "/Users/heladia/Library/CloudStorage/GoogleDrive-heladia@ccg.unam.mx/Mi unidad/github-repos-projects/lcg-cursos/beii-ia/quarto-course-template"
+  802  ls -lt
+  803  cd chapters
+  804  ls
+  805  ls -lt
+  806  cd sesion-01-fundamentos
+  807  ls -lt
+  808  quarto render glosario.qmd
+  809  ls -lt
+  810  quarto render index.qmd
+  811  ls -lt
+  812  quarto render index.qmd
+  813  ls -lt
+  814  cd ..
+  815  ls -lt
+  816  cd ..
+  817  ls -lta
+  818  cd chapters
+  819  ls
+  820  cd sesion-01-fundamentos
+  821  ls -lt
+  822  quarto render index.qmd
+  823  ls -lt
+  824  ls --lta
+  825  ls -lta
+  826  cd ..
+  827  ls -lta
+  828  cd ..
+  829  ls -lta
+  830  cd chapters
+  831  ks
+  832  ls
+  833  cd sesion-01-fundamentos
+  834  ls -lt
+  835  quarto render index.qmd
+  836  quarto render glosario.qmd
+  837  quarto render patrones-avanzados.qmd
+  838  quarto render prompting-cientifico.qmd
+  839  quarto render recursos.qmd
+  840  quarto render recursos.qmd
+  841  cd "/Users/heladia/Library/CloudStorage/GoogleDrive-heladia@ccg.unam.mx/Mi unidad/github-repos-projects/lcg-cursos/beii-ia/quarto-course-template" && quarto preview --no-browser --port 4200
+  842  ls -lt
+  843  cd chapters
+  844  ls
+  845  cd sesion-01-fundamentos
+  846  ls -lt
+  847  ls -lt
+  848  more glosario.qmd.bak
+  849       ls -lt
+  850  cd ..
+  851  ls -lt
+  852  cd ..
+  853  ls -lta
+  854  cd exercises
+  855  ls
+  856  ls -lt
+  857  history
+  858  history -1000 | grep quarto
+  859  quarto render index.qmd
+  860  ls -lt
+  861  quarto render sesion-01-analisis-prompts.qmd
+  862  cd ..
+  863  ls -lt
+  864  ls resources
+  865  cd resources
+  866  ls -lt
+  867  quarto render index.qmd
+  868  cd ..
+  869  ls -lt
+  870  ls -lt components
+  871  cd components
+  872  ls
+  873  ls -lt
+  874  quarto render component-examples.qmd
+  875  cd ..
+  876  ls -lt
+  877  ls index_files
+  878  cd chapters
+  879  ls -lt
+  880  cd sesion-01-fundamentos
+  881  cd ..
+  882  grep -RIn --include="*.qmd" -E '^[[:space:]]*---[[:space:]]*$|^[[:space:]]*___[[:space:]]*$|\*\*\*' .
+  883  grep -RIn --include="*.qmd" -E '^[[:space:]]*---[[:space:]]*$|^[[:space:]]*___[[:space:]]*$|\*\*\*' .
+  884  cd sesion-01-fundamentos
+  885  ls -lt
+  886  quarto render *.qmd
+  887  quarto render glosario.qmd
+  888  ls -lt
+  889  quarto render index.qmd
+  890  quarto render recursos.qmd
+  891  ls -lt
+  892  quarto render  prompting-cientifico.qmd
+  893  quarto render  patrones-avanzados.qmd
+  894  cd ..
+  895  ls -lta
+  896  cd ..
+  897  ls -lta
+  898  quarto render  index.qmd
+  899  quarto render  index.qmd
+  900  quarto render  index.qmd
+  901  ls -lt
+  902  cd exercises
+  903  ls -lt
+  904  quarto render  index.qmd
+  905  ls -lt
+  906  quarto render  sesion-01-analisis-prompts.qmd
+  907  cd ..
+  908  ls -lt
+  909  more index.qmd
+  910  quarto render  index.qmd
+  911  grep Welcome *
+  912  grep Learn *
+  913  clear
+  914  grep Learn *
+  915  grep "What You"  *
+  916  grep -i "What You"  *
+  917  ls -lt
+  918  ls -lt
+  919  mkdir _includes
+  920  cd _includes
+  921  vi after-body.html
+  922  cd ..
+  923  vi _quarto.yml
+  924  quarto clean
+  925  quarto render --clean
+  926  quarto render --clean
+  927  vi _includes/after-body.html
+  928  vi _quarto.yml
+  929  quarto render --clean
+  930  cd chapters/example-chapter-01/
+  931  ls -lt
+  932  quarto render --clean
+  933  quarto render --clean | more
+  934  clear
+  935  quarto render --clean 
+  936  quarto render 
+  937  grep About *
+  938  grep -i About *
+  939  grep -i home *
+  940  ls -lt
+  941  cd ..
+  942  ls -lt
+  943  cd ..
+  944  quarto render --clean 
+  945  quarto render 
+  946  quarto render index.qmd
+  947  quarto render index.qmd
+  948  quarto render index.qmd
+  949  quarto render index.qmd
+  950  quarto render index.qmd
+  951  quarto render index.qmd
+  952  quarto render index.qmd
+  953  quarto render index.qmd
+  954  quarto render index.qmd
+  955  quarto render index.qmd
+  956  quarto render index.qmd
+  957  quarto render index.qmd
+  958  quarto render index.qmd
+  959  quarto render index.qmd
+  960  quarto render index.qmd
+  961  quarto render index.qmd
+  962  quarto render index.qmd
+  963  quarto render index.qmd
+  964  quarto render index.qmd
+  965  quarto render index.qmd
+  966  quarto render index.qmd
+  967  quarto render index.qmd
+  968  quarto render index.qmd
+  969  quarto render index.qmd
+  970  quarto render index.qmd
+  971  quarto render index.qmd
+  972  quarto render index.qmd
+  973  quarto render index.qmd
+  974  quarto render 
+  975  ls -lt
+  976  cd chapters
+  977  ls
+  978  cd capitulo1
+  979  ls -lt
+  980  quarto render index.qmd
+  981  cd ..
+  982  ls -lt
+  983  ls -lt
+  984  cd ..
+  985  ls -lt
+  986  more index.qmd
+  987  ls -lt
+  988  more _quarto.yml
+  989  ls -lt chapters
+  990  quarto render 
+  991  quarto render 
+  992  cd chapters/capitulo1
+  993  quarto render index.qmd
+  994  quarto render index.qmd
+  995  quarto render index.qmd
+  996  quarto render index.qmd
+  997  quarto render index.qmd
+  998  quarto render index.qmd
+  999  quarto render index.qmd
+ 1000  pwd
+ 1001  history
+ 1002  pwd
+ 1003  cd ..
+ 1004  history 1000 > log.txt
+ 1005  more log.txt

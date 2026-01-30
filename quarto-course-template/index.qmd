@@ -1,17 +1,18 @@
 ---
-title: "Course Title"
-subtitle: "A Modern Learning Experience"
-author: "{{< meta author >}}"
+title: "Prompting Científico con Inteligencia Artificial"
+subtitle: "Pensamiento científico, validación y reproducibilidad con IA"
+author: "Heladia Salgado"
 date: last-modified
-description: "Welcome to this comprehensive course. Learn at your own pace with interactive content and hands-on exercises."
+description: "Bienvenidos al curso de Prompting Científico con Inteligencia Artificial, que te permitirá aprender habilidades para diseñar instrucciones rigurosas y evaluar críticamente las respuestas generadas por IA."
 image: "assets/images/og-image.png"
 ---
 
-::: {.hero-section style="text-align: center; padding: 3rem 0;"}
+::: {.hero-section style="text-align: left; padding: 3rem 0;"}
 
-# Welcome to Your Course! 🚀
+## Bienvenido al curso! 🚀
 
-*An elegant, modern learning experience designed with you in mind*
+*Prompting científico para interactuar con IA con rigor y pensamiento crítico.*
+
 
 <div style="margin: 2rem 0;">
 <button class="btn btn-primary" onclick="window.location.href='chapters/example-chapter-01/index.html'">
@@ -24,9 +25,7 @@ image: "assets/images/og-image.png"
 
 :::
 
----
-
-## What You'll Learn
+## Qué aprenderás ?
 
 ::: {.card-grid}
 
@@ -36,9 +35,9 @@ image: "assets/images/og-image.png"
 :::
 ::: {.feature-content}
 
-### Core Concepts
+### Prompting Científico
 
-Master the fundamental principles and theories that form the foundation of this field.
+Diseñar instrucciones claras, estructuradas y justificadas para sistemas de IA.
 
 :::
 :::
@@ -49,9 +48,9 @@ Master the fundamental principles and theories that form the foundation of this 
 :::
 ::: {.feature-content}
 
-### Practical Skills
+### Pensamiento Crítico
 
-Develop hands-on skills through interactive exercises and real-world projects.
+Evaluar, cuestionar y validar respuestas generadas por IA.
 
 :::
 :::
@@ -62,9 +61,9 @@ Develop hands-on skills through interactive exercises and real-world projects.
 :::
 ::: {.feature-content}
 
-### Applied Knowledge
+### Metodología y Rigor
 
-Learn how to apply concepts to solve complex problems in practical scenarios.
+Aplicar criterios científicos, reproducibilidad y trazabilidad en el uso de IA.
 
 :::
 :::
@@ -75,18 +74,18 @@ Learn how to apply concepts to solve complex problems in practical scenarios.
 :::
 ::: {.feature-content}
 
-### Collaborative Learning
+### Desarrollo Asistido por IA
 
-Engage with peers and instructors in a supportive learning community.
-
-:::
-:::
+Usar IA de forma metodológica en el desarrollo de software y proyectos técnicos.
 
 :::
+:::
 
----
+:::
 
-## Course Structure
+
+
+## Estructura del Curso
 
 ::: {.timeline}
 
@@ -95,15 +94,15 @@ Engage with peers and instructors in a supportive learning community.
 :::
 ::: {.timeline-content}
 ::: {.timeline-date}
-Module 1
+Módulo 1
 :::
 ::: {.timeline-title}
-Foundations
+Fundamentos epistemológicos del uso de IA en Bioinformática y Genética
 :::
 
-Introduction to core concepts and fundamental principles. Build a solid foundation for advanced topics.
+Este módulo introduce los fundamentos epistemológicos necesarios para comprender el uso de la inteligencia artificial en bioinformática y genética. Se analizan los supuestos, alcances y limitaciones del conocimiento generado con IA, así como el papel del juicio científico, la interpretación de resultados y la responsabilidad del investigador en contextos asistidos por sistemas automatizados.
 
-**Chapters**: 1-3 | **Duration**: 2 weeks
+**Capítulo**: 1 | **Duración**: 2 horas
 
 :::
 :::
@@ -113,15 +112,15 @@ Introduction to core concepts and fundamental principles. Build a solid foundati
 :::
 ::: {.timeline-content}
 ::: {.timeline-date}
-Module 2
+Módulo 2
 :::
 ::: {.timeline-title}
-Intermediate Concepts
+Diseño científico de prompts para sistemas de inteligencia artificial
 :::
 
-Dive deeper into key topics with practical examples and guided exercises.
+Este módulo se centra en el diseño de prompts como una práctica científica y metodológica. Se estudian estrategias para formular instrucciones claras, estructuradas y reproducibles, considerando el contexto, los supuestos y los criterios de evaluación necesarios para interactuar de manera rigurosa con sistemas de inteligencia artificial en bioinformática, genética y desarrollo de software.
 
-**Chapters**: 4-6 | **Duration**: 3 weeks
+**Capítulo**: 2 | **Duración**: 2 horas
 
 :::
 :::
@@ -131,15 +130,15 @@ Dive deeper into key topics with practical examples and guided exercises.
 :::
 ::: {.timeline-content}
 ::: {.timeline-date}
-Module 3
+Módulo 3
 :::
 ::: {.timeline-title}
-Advanced Applications
+Evaluación e iteración crítica de prompts asistidos por IA
 :::
 
-Master advanced techniques and work on real-world projects.
+Este módulo se centra en la evaluación crítica e iterativa de prompts diseñados para sistemas de inteligencia artificial. Se desarrollan criterios para analizar la calidad de las respuestas, refinar instrucciones, identificar errores y sesgos, y ajustar los prompts de manera sistemática antes de su aplicación en contextos científicos y de desarrollo de software.
 
-**Chapters**: 7-9 | **Duration**: 3 weeks
+**Capítulo**: 3 | **Duración**: 2 horas
 
 :::
 :::
@@ -149,33 +148,33 @@ Master advanced techniques and work on real-world projects.
 :::
 ::: {.timeline-content}
 ::: {.timeline-date}
-Module 4
+Módule 4
 :::
 ::: {.timeline-title}
-Capstone Project
+Desarrollo de software asistido por IA: riesgos, validación y rigor
 :::
 
-Apply everything you've learned in a comprehensive final project.
+Este módulo aborda el desarrollo de software asistido por inteligencia artificial como un caso aplicado del prompting científico. Se analizan los riesgos de ambigüedad, alucinaciones y errores de diseño derivados de requerimientos mal definidos, así como estrategias para especificar, validar y evaluar código generado por IA, manteniendo criterios de rigor, responsabilidad técnica y buenas prácticas de ingeniería de software.
 
-**Chapters**: 10 | **Duration**: 2 weeks
-
-:::
-:::
+**Capítulo**: 4 | **Duration**: 4 horas
 
 :::
+:::
 
----
+:::
 
-## Key Features
+
+
+## Características principales
 
 ::: {.card-grid}
 
 ::: {.card .card-primary}
 ::: {.card-body}
 
-#### <i class="fas fa-mobile-alt"></i> Fully Responsive
+#### <i class="fas fa-mobile-alt"></i> Prompting Científico
 
-Access course materials on any device - desktop, tablet, or mobile.
+Diseño riguroso de instrucciones para interactuar con sistemas de IA en contextos científicos y técnicos.
 
 :::
 :::
@@ -183,9 +182,9 @@ Access course materials on any device - desktop, tablet, or mobile.
 ::: {.card .card-info}
 ::: {.card-body}
 
-#### <i class="fas fa-moon"></i> Dark Mode
+#### <i class="fas fa-moon"></i> Pensamiento Crítico y Validación
 
-Toggle between light and dark themes for comfortable reading anytime.
+Evaluación sistemática de resultados generados por IA, identificación de errores, sesgos y alucinaciones.
 
 :::
 :::
@@ -193,9 +192,9 @@ Toggle between light and dark themes for comfortable reading anytime.
 ::: {.card .card-success}
 ::: {.card-body}
 
-#### <i class="fas fa-code"></i> Interactive Code
+#### <i class="fas fa-code"></i> Desarrollo de Software con IA
 
-Run and experiment with code directly in your browser.
+Uso metodológico de IA en el desarrollo de software, con énfasis en especificación, revisión y buenas prácticas.
 
 :::
 :::
@@ -203,124 +202,121 @@ Run and experiment with code directly in your browser.
 ::: {.card .card-warning}
 ::: {.card-body}
 
-#### <i class="fas fa-search"></i> Powerful Search
+#### <i class="fas fa-search"></i> Rigor, Ética y Reproducibilidad
 
-Quickly find any topic or concept with full-text search.
+Criterios científicos, responsabilidad y reproducibilidad en el uso de inteligencia artificial.
 
-:::
-:::
-
-::: {.card .card-danger}
-::: {.card-body}
-
-#### <i class="fas fa-bookmark"></i> Progress Tracking
-
-Keep track of your learning journey and completed chapters.
-
-:::
-:::
-
-::: {.card .card-info}
-::: {.card-body}
-
-#### <i class="fas fa-download"></i> Downloadable Resources
-
-Access datasets, code samples, and additional materials.
 
 :::
 :::
 
 :::
 
----
 
-## Prerequisites
+
+## Requisitos Previos
 
 ::: {.callout-note}
-## What You Need to Know
+## Que necesitas saber
 
-Before starting this course, you should be familiar with:
+### Prerrequisitos generales
 
-- **Prerequisite 1**: Basic understanding of [concept]
-- **Prerequisite 2**: Familiarity with [tool/language]
-- **Prerequisite 3**: General knowledge of [topic]
+- Conocimientos básicos de programación o lógica computacional.
+- Comprensión básica del método científico y del razonamiento crítico.
+- Experiencia previa en contextos científicos, técnicos o de análisis de datos (deseable).
+- Disposición para reflexionar críticamente sobre el uso de la inteligencia artificial.
+- Actitud abierta al aprendizaje metodológico y a la evaluación rigurosa de resultados.
 
-Don't worry if you're rusty on some topics - we'll review key concepts as needed!
+### Prerrequisitos técnicos
+
+- Contar con acceso a una herramienta de IA conversacional (por ejemplo, ChatGPT u otra equivalente).
+- Tener acceso a un entorno de desarrollo para programación, como Visual Studio Code, Cursor u otro editor similar.
+- Capacidad para ejecutar código localmente o en un entorno controlado (terminal, notebooks o IDE).
+- Acceso a internet para interactuar con herramientas de IA y consultar documentación técnica.
+
 
 :::
 
----
 
-## Course Information
+
+## Información del curso
 
 ::: {.panel-tabset}
 
-## Schedule
+## Calendario
 
-| Week | Topics | Deliverables |
-|------|--------|--------------|
-| 1-2 | Introduction, Setup, Fundamentals | Quiz 1 |
-| 3-4 | Core Concepts, Practical Applications | Assignment 1 |
-| 5-6 | Intermediate Topics, Case Studies | Project Proposal |
-| 7-8 | Advanced Techniques, Optimization | Assignment 2 |
-| 9-10 | Final Project, Presentations | Final Project |
+| Sesión | Módulo / Temas | Evidencias |
+|------|----------------|------------|
+| 1 | Fundamentos epistemológicos del uso de IA | Cuestionario diagnóstico |
+| 2 | Diseño científico de prompts | Ejercicio guiado de diseño |
+| 3 | Evaluación e iteración crítica de prompts | Análisis crítico de resultados |
+| 4 | Desarrollo de software asistido por IA | Ejercicio de especificación y revisión |
+| 5 | Desarrollo de software con IA (riesgos y validación) | Práctica técnica |
+| 6 | Integración metodológica y reproducibilidad | Entrega parcial de proyecto |
+| 7 | Proyecto integrador | Proyecto final |
+| 8 | Presentación y discusión crítica | Presentación final |
 
-## Grading
 
-| Component | Weight | Description |
-|-----------|--------|-------------|
-| Participation | 10% | Engagement in discussions and activities |
-| Quizzes | 20% | Short assessments throughout the course |
-| Assignments | 30% | Hands-on exercises and projects |
-| Final Project | 40% | Comprehensive capstone project |
+## Evaluación
 
-**Grading Scale**:
-- A: 90-100%
-- B: 80-89%
-- C: 70-79%
-- D: 60-69%
-- F: Below 60%
+| Componente | Porcentaje | Descripción |
+|------------|------------|-------------|
+| Participación crítica | 10% | Discusión fundamentada y reflexión sobre el uso de IA |
+| Ejercicios de prompting | 25% | Diseño, iteración y justificación de prompts |
+| Prácticas técnicas | 25% | Uso metodológico de IA en contextos científicos y de software |
+| Proyecto final | 40% | Integración de prompting científico, validación y rigor metodológico |
 
-## Resources
-
-### Required Materials
-- Textbook or readings (provided)
-- Computer with [specifications]
-- Software: [list of required software]
-
-### Recommended Resources
-- [Book Title] by Author
-- [Online Resource](https://example.com)
-- [Video Series](https://example.com)
-
-### Support
-- **Office Hours**: Days and times
-- **Discussion Forum**: [Link]
-- **Email**: {{< meta email >}}
-- **Help Desk**: [Link or contact info]
+**Escala de evaluación**  
+- A: 90–100  
+- B: 80–89  
+- C: 70–79  
+- D: 60–69  
+- F: < 60  
 
 :::
 
----
+## Recursos
 
-## Learning Outcomes
+### Materiales requeridos
 
-By the end of this course, you will be able to:
+- Material de lectura y notas del curso (proporcionados a lo largo del módulo).
+- Computadora personal con acceso a internet y capacidad para ejecutar código localmente.
+- Entorno de desarrollo para programación (por ejemplo, Visual Studio Code, Cursor u otro editor equivalente).
+- Acceso a una herramienta de IA conversacional (por ejemplo, ChatGPT u otro sistema equivalente).
+
+### Recursos recomendados
+
+- Documentación oficial de lenguajes y herramientas de programación utilizados durante el curso.
+- Artículos y lecturas seleccionadas sobre inteligencia artificial, pensamiento crítico y metodología científica.
+- Recursos en línea sobre buenas prácticas en desarrollo de software y reproducibilidad.
+- Guías y ejemplos de *prompting* aplicados a contextos científicos y técnicos (proporcionados durante el curso).
+
+### Apoyo y comunicación
+
+- **Horario de asesorías**: Se indicará durante el curso.
+- **Espacio de discusión**: Plataforma del curso para preguntas, comentarios y discusión académica.
+- **Correo de contacto**: helysalgado@gmail.com
+
+
+:::
+
+## Resultados de aprendizaje
+
+Al finalizar este curso, el estudiante será capaz de:
 
 ::: {.learning-objectives}
 
-- **Understand**: Core principles and fundamental concepts
-- **Apply**: Theoretical knowledge to practical problems
-- **Analyze**: Complex scenarios using learned techniques
-- **Evaluate**: Different approaches and methodologies
-- **Create**: Original solutions and projects
-- **Collaborate**: Effectively with peers on shared goals
+- **Comprender** los fundamentos epistemológicos y metodológicos del uso de la inteligencia artificial en contextos científicos y técnicos.
+- **Diseñar** prompts de manera rigurosa, clara y estructurada para interactuar con sistemas de IA.
+- **Evaluar** críticamente las respuestas generadas por IA, identificando errores, sesgos, supuestos y alucinaciones.
+- **Iterar y refinar** prompts con base en criterios científicos y objetivos definidos.
+- **Aplicar** prompting científico en el desarrollo de software asistido por IA, manteniendo buenas prácticas y responsabilidad técnica.
+- **Justificar** decisiones y resultados derivados del uso de IA mediante razonamiento crítico y evidencia.
+
 
 :::
 
----
-
-## Meet Your Instructor
+## Conoce a tu instructora
 
 ::: {.card}
 ::: {.card-body}
@@ -328,34 +324,37 @@ By the end of this course, you will be able to:
 <div style="display: flex; align-items: center; gap: 2rem;">
 
 <div style="flex-shrink: 0;">
-<img src="assets/images/instructor-photo.png" alt="Instructor" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+<img src="assets/images/instructor-photo.png" alt="Instructora" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
 </div>
 
 <div>
 
 ### {{< meta author >}}
 
-**{{< meta author.title >}}**  
-{{< meta author.affiliation >}}
+**Lic. en Informática**  
+Centro de Ciencias Genómicas, UNAM
 
-Brief bio about the instructor. Include relevant experience, expertise, and interests.
+Técnica Académica y docente en bioinformática y análisis computacional, con experiencia en el uso metodológico y crítico de herramientas de inteligencia artificial en contextos científicos y de desarrollo de software. Su trabajo se centra en el diseño de procesos reproducibles, el pensamiento científico aplicado y la formación de criterio para el uso responsable de la IA en investigación y educación.
 
 <div style="margin-top: 1rem;">
-<a href="mailto:{{< meta email >}}" class="btn btn-outline"><i class="fas fa-envelope"></i> Email</a>
-<a href="{{< meta author.website >}}" class="btn btn-outline"><i class="fas fa-globe"></i> Website</a>
-<a href="https://github.com/{{< meta author.github >}}" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+<a href="mailto:helysalgado@gmail.com" class="btn btn-outline"><i class="fas fa-envelope"></i> Email</a>
+<a href="https://scholar.google.com/citations?user=ezI9LUUAAAAJ&hl=es" class="btn btn-outline"><i class="fas fa-globe"></i> Website</a>
+<a href="https://github.com/Helysalgado" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
 </div>
 
 </div>
 
 </div>
+
 
 :::
 :::
 
----
 
-## Testimonials
+
+## Testimonios
+
+<!--
 
 ::: {.card-grid}
 
@@ -391,99 +390,109 @@ Brief bio about the instructor. Include relevant experience, expertise, and inte
 
 :::
 
----
+-->
 
-## Frequently Asked Questions
+## Preguntas frecuentes
 
 ::: {.accordion}
 
 ::: {.accordion-item}
 ::: {.accordion-header}
-How long does the course take to complete?
+¿Cuál es la duración del curso?
 :::
 ::: {.accordion-body}
 
-The course is designed to be completed in 10 weeks with 5-7 hours of study per week. However, you can progress at your own pace.
+El curso está diseñado para desarrollarse a lo largo de aproximadamente 12 horas. 
 
 :::
 :::
 
 ::: {.accordion-item}
 ::: {.accordion-header}
-What if I fall behind?
+¿Qué ocurre si me atraso en alguna actividad?
 :::
 ::: {.accordion-body}
 
-Life happens! Reach out to the instructor as soon as possible. We can work together to create a catch-up plan.
+El curso promueve un aprendizaje reflexivo y metodológico. Si enfrentas dificultades o retrasos, se recomienda comunicarte con la instructora para acordar estrategias de seguimiento y recuperación, priorizando la comprensión sobre la velocidad.
 
 :::
 :::
 
 ::: {.accordion-item}
 ::: {.accordion-header}
-Is there a certificate upon completion?
+¿Necesito experiencia previa en inteligencia artificial?
 :::
 ::: {.accordion-body}
 
-Yes! Students who successfully complete all requirements will receive a certificate of completion.
+No se requiere experiencia previa en inteligencia artificial. El curso se enfoca en el uso crítico, metodológico y científico de estos sistemas, partiendo de fundamentos conceptuales y prácticos.
 
 :::
 :::
 
 ::: {.accordion-item}
 ::: {.accordion-header}
-Can I access materials after the course ends?
+¿Este curso es solo teórico?
 :::
 ::: {.accordion-body}
 
-Absolutely! All course materials remain accessible indefinitely, and you can review them anytime.
+No. El curso combina fundamentos conceptuales con ejercicios prácticos de *prompting* y desarrollo asistido por IA, enfatizando la evaluación crítica, la validación y la aplicación responsable en contextos científicos y técnicos.
+
+:::
+:::
+
+::: {.accordion-item}
+::: {.accordion-header}
+¿Puedo acceder a los materiales después de finalizar el curso?
+:::
+::: {.accordion-body}
+
+Sí. Los materiales del curso permanecerán disponibles para su consulta posterior, permitiendo revisar contenidos, ejemplos y recursos una vez concluido el curso.
 
 :::
 :::
 
 :::
 
----
-
-## Ready to Begin?
+## ¿Listo para comenzar?
 
 ::: {.callout-important}
-## Get Started Today!
+## Comienza el curso
 
 <div style="text-align: center; padding: 1rem;">
 
 <button class="btn btn-primary" onclick="window.location.href='chapters/example-chapter-01/index.html'">
-<i class="fas fa-rocket"></i> Start Chapter 1
+<i class="fas fa-rocket"></i> Iniciar Módulo 1
 </button>
 
 </div>
 
+
 :::
 
----
 
-## Stay Connected
+## Mantente en contacto
 
 ::: {.card}
 ::: {.card-body style="text-align: center;"}
 
-### Join Our Community
+### Comunidad y comunicación
 
 <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
 
-<a href="https://github.com/{{< meta author.github >}}" class="btn btn-outline">
+<a href="https://github.com/Helysalgado/" class="btn btn-outline">
 <i class="fab fa-github fa-2x"></i>
 </a>
 
-<a href="https://twitter.com/{{< meta author.twitter >}}" class="btn btn-outline">
-<i class="fab fa-twitter fa-2x"></i>
+<a href="https://scholar.google.com/citations?user=ezI9LUUAAAAJ&hl=es" class="btn btn-outline">
+<i class="fas fa-graduation-cap fa-2x"></i>
 </a>
 
-<a href="mailto:{{< meta email >}}" class="btn btn-outline">
+<a href="mailto:helysalgado@gmail.com" class="btn btn-outline">
 <i class="fas fa-envelope fa-2x"></i>
 </a>
 
 </div>
+
 
 :::
 :::

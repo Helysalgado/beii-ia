@@ -1,0 +1,23 @@
+---
+title: "Test Minimal"
+---
+
+## Test Simple
+
+Este es un texto simple.
+
+::: {.callout-note}
+## Nota simple
+Contenido
+:::
+
+::: {.card-grid}
+
+::: {.card}
+::: {.card-body}
+Test card
+:::
+:::
+
+:::
+

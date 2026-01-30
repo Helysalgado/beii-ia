@@ -18,7 +18,7 @@ This section contains all course exercises organized by topic and difficulty. Ea
 
 :::
 
----
+
 
 ## Exercise Guidelines
 
@@ -59,11 +59,34 @@ If you're stuck:
 
 :::
 
----
 
 ## Exercise List
 
-### Module 1: Foundations
+### Sesión 1: Fundamentos de IA
+
+::: {.card-grid}
+
+::: {.card .card-warning}
+::: {.card-body}
+
+#### Análisis Crítico de Prompts
+
+**Topic**: Prompting científico y patrones epistemológicos  
+**Difficulty**: <span class="badge badge-warning">Intermediate</span>  
+**Time**: 45-60 minutes
+
+Mejora la calidad epistemológica de prompts científicos aplicando patrones avanzados.
+
+[Start Exercise →](sesion-01-analisis-prompts.qmd)
+
+:::
+:::
+
+:::
+
+
+
+### Module 1: Foundations (Examples)
 
 ::: {.card-grid}
 
@@ -217,7 +240,7 @@ A comprehensive project that brings together all concepts learned throughout the
 :::
 :::
 
----
+
 
 ## Exercise Categories
 
@@ -258,7 +281,7 @@ Filter exercises by category:
 
 :::
 
----
+
 
 ## Progress Tracking
 
@@ -294,7 +317,7 @@ Track your progress through the exercises:
 :::
 :::
 
----
+
 
 ## Tips for Success
 
@@ -312,7 +335,7 @@ Track your progress through the exercises:
 
 :::
 
----
+
 
 ## Common Mistakes
 
@@ -328,7 +351,7 @@ Track your progress through the exercises:
 
 :::
 
----
+
 
 ## Additional Practice
 
@@ -374,7 +397,7 @@ Join peer study groups for collaborative problem-solving.
 
 :::
 
----
+
 
 ## Need Help?
 

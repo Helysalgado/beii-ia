@@ -1,0 +1,514 @@
+---
+title: "Capítulo 1 — Introducción al Prompting"
+subtitle: "Conceptos y prácticas fundamentales"
+date: last-modified
+description: "Conceptos básicos de prompting: qué es un prompt, cómo se estructura y cómo aplicar técnicas fundamentales como zero-shot, few-shot y multi-step."
+categories: [prompting, fundamentos, introducción]
+---
+
+::: {.learning-objectives}
+### Objetivos de aprendizaje {.unnumbered}
+
+Al finalizar este capítulo, el estudiante será capaz de:
+
+- **Definir** qué es un prompt y **describir** su función como interfaz escrita para interactuar con un modelo de lenguaje.
+- **Identificar** los componentes básicos de un prompt (rol, contexto, tarea, restricciones y salida esperada).
+- **Distinguir** entre los principales tipos de prompting (zero-shot, few-shot y multi-step) y **explicar** cuándo utilizar cada uno.
+- **Aplicar** técnicas básicas de prompting para redactar prompts simples y estructurados en tareas científicas o técnicas.
+:::
+
+
+## Antes de comenzar
+
+La inteligencia artificial basada en modelos de lenguaje se ha convertido en una herramienta cotidiana en contextos científicos, académicos y técnicos. Sin embargo, su uso efectivo y responsable no depende únicamente de la potencia del modelo, sino de la forma en que los usuarios formulan sus instrucciones.
+
+Este capítulo introduce el concepto de *prompting* desde una perspectiva general y accesible, con el objetivo de establecer un **lenguaje común** y una **base conceptual sólida** para el resto del curso. Aquí no se aborda el *prompting* como una colección de trucos o recetas rápidas, sino como una práctica de diseño de instrucciones que requiere claridad, intención y criterio.
+
+Antes de analizar los fundamentos epistemológicos del uso de la inteligencia artificial o de aplicar estas herramientas en el desarrollo de software, este capítulo se centra en establecer los conceptos básicos necesarios para trabajar con modelos de lenguaje.
+
+En particular, se busca comprender **qué es un prompt**, **cómo se formula como una instrucción escrita** y **cómo su diseño influye en el tipo de respuestas que se generan**. Para ello, resulta útil introducir primero qué se entiende por inteligencia artificial generativa y cuáles son algunas de sus características generales.
+
+
+::: {.callout-important}
+**Epistemológica**: tiene que ver con qué tan válido, justificado y limitado es un conocimiento.
+La **dimensión epistemológica de un prompt** se refiere a qué tipo de conocimiento permite producir, bajo qué supuestos, con qué grado de validez y qué tan controladas están las inferencias que se derivan de la respuesta de la IA.
+
+:::
+
+
+::: {.callout-note}
+
+En este curso, los términos *prompt* e *instrucción* se utilizarán de manera equivalente.
+
+:::
+
+
+
+## ¿Qué es la IA generativa?
+
+Modelos computacionales capaces de **generar texto, código u otros contenidos** a partir de patrones estadísticos aprendidos en grandes volúmenes de datos.
+
+- No razona como un humano
+- No tiene un modelo interno del mundo
+- No comprende biología
+- Predice secuencias de texto plausibles
+
+![](https://madsblog.net/wp-content/uploads/2024/05/Imagen-de-WhatsApp-2024-05-11-a-las-22.42.49_906999a3.jpg)
+Fuente: Multi Clouds IT Blog. [Generative AI: Conceptos clave](https://madsblog.net/2025/01/06/generative-ai-conceptos-clave/)
+
+La figura muestra, de manera esquemática, cómo la **IA generativa** se ubica dentro 
+del ecosistema más amplio de la inteligencia artificial. 
+En este curso, el interés se centra únicamente en esta región, ya que el *prompting* 
+es una forma de interacción con modelos de lenguaje generativos, no con todos los 
+sistemas de IA.
+
+
+## ¿Qué es un LLM?
+
+Un **LLM (Large Language Model)** es un modelo de inteligencia artificial entrenado con grandes volúmenes de texto para **aprender patrones del lenguaje** y **predecir la siguiente palabra (token)** en una secuencia.
+
+
+![](https://csc.gov.im/media/zt2h5dbg/llm-diagram-1.png?width=795&height=425&mode=max)
+Fuente: Cyber Security Centre. [AI - Large Language Models](https://csc.gov.im/advice-guidance/artificial-intelligence-large-language-models/)
+
+La figura representa, de manera simplificada, el tipo de datos utilizados durante 
+el entrenamiento de un modelo de lenguaje y algunas de las capacidades generales 
+que emergen de ese proceso. En este capítulo no se abordan los detalles del
+ entrenamiento; el enfoque se centra en cómo interactuar con el modelo ya entrenado 
+ mediante instrucciones escritas (prompts).
+
+
+**Características clave**
+
+- Aprende a partir de datos textuales masivos.
+- No “entiende” el contenido como un humano; **modela probabilidades**.
+- Funciona a nivel de **tokens**, no de ideas o conceptos.
+- Puede generar texto coherente, responder preguntas y explicar procedimientos.
+
+**Qué puede hacer**
+
+- Explicar conceptos técnicos.
+- Sugerir estructuras de análisis o código.
+- Resumir y reformular información.
+- Asistir en tareas de documentación y aprendizaje.
+
+**Qué NO puede hacer**  
+
+- Generar conocimiento científico nuevo.
+- Validar la veracidad de resultados experimentales.
+- Entender causalidad biológica.
+- Sustituir el criterio y la responsabilidad humana.
+
+::: {.callout-important}
+- Un LLM no conoce: **predice texto**.  
+- El conocimiento científico sigue siendo responsabilidad del estudiante.
+
+:::
+
+
+Un modelo de lenguaje genera texto basándose en probabilidades aprendidas a partir de grandes volúmenes de datos. No comprende el contenido ni verifica la veracidad de la información.
+
+El modelo solo tiene acceso al **prompt** y al **contexto proporcionado**. Parámetros como la **temperatura** influyen en la variabilidad de la respuesta, pero no garantizan calidad ni corrección científica.
+
+
+
+## 3. ¿Qué es la ingeniería de prompts?
+
+La **ingeniería de prompts** se refiere al conjunto de principios y prácticas orientadas al diseño, evaluación y refinamiento de instrucciones para interactuar de manera controlada y efectiva con sistemas de inteligencia artificial.
+
+En este curso, la ingeniería de prompts no se aborda como una serie de trucos, sino como un proceso metodológico que requiere claridad, validación y pensamiento crítico.
+
+
+
+## 4. El prompt
+
+### ¿Qué es un prompt?
+
+Un *prompt* puede entenderse como la **interfaz escrita** entre una persona y un sistema de inteligencia artificial. A través del prompt, el usuario expresa una intención, plantea una tarea y define, explícita o implícitamente, las condiciones bajo las cuales espera una respuesta.
+
+Los sistemas de IA no comprenden objetivos ni contextos por sí mismos. No distinguen entre lo correcto y lo incorrecto, ni entre lo relevante y lo irrelevante. Generan respuestas basadas en patrones aprendidos y en la información proporcionada en la instrucción.
+
+Por esta razón, la calidad de la respuesta está fuertemente condicionada por la calidad del prompt.
+
+
+> * Una instrucción vaga genera una respuesta vaga.
+> * Una instrucción ambigua genera una respuesta ambigua.
+> * Una instrucción mal definida puede generar una respuesta convincente, pero incorrecta.
+
+
+::: {.callout-prompt title="Prompt — Instrucción a la IA"}
+
+<div class="prompt-container">
+<button class="copy-prompt-btn">Copiar</button>
+
+> Explica qué es un gen.
+</div>
+
+:::
+
+
+
+Este prompt indica una tarea (*explicar*), pero **no define** el nivel académico, el marco  ni el propósito de la explicación. Como resultado, el sistema tenderá a generar una respuesta general y poco específica.
+
+
+**Prompt contextualizado en genética:**  
+
+::: {.callout-prompt title="Prompt — Instrucción a la IA"}
+
+<div class="prompt-container">
+<button class="copy-prompt-btn">Copiar</button>
+
+> Explica qué es un gen desde la perspectiva de la genética molecular, dirigido a estudiantes de licenciatura en ciencias genómicas, incluyendo su estructura, función y las limitaciones del concepto clásico.
+</div>
+
+:::
+
+
+En este caso, el prompt:
+
+- delimita el **dominio científico**,
+- define la **audiencia**,
+- y acota el **alcance conceptual**.
+
+La IA no “comprende” mejor el tema, pero **opera bajo restricciones más claras**, lo que incrementa la calidad epistemológica de la respuesta.
+![](images/prompt-condicionado.png){fig-cap="Condicionamiento de la generación en modelos de lenguaje" width="50%"}
+
+**Condicionamiento de la generación en modelos de lenguaje**. Los modelos de lenguaje generan texto de forma autoregresiva, estimando en cada paso la distribución de probabilidad del siguiente token. El prompt introduce condiciones de generación (rol, contexto, audiencia y tarea) que restringen el espacio probabilístico del modelo, 
+reduciendo los grados de libertad y dando lugar a una salida textual condicionada y más específica.
+
+### Componentes básicos de un prompt bien definido
+
+En este curso trabajaremos con un conjunto de componentes mínimos que permiten estructurar un prompt de manera clara y controlable:
+
+1. **Rol**:  Define desde qué perspectiva debe responder la IA.
+Por ejemplo: “Actúa como un asistente de investigación en bioinformática”.
+2. **Contexto**: Proporciona la información relevante para delimitar el problema.
+Por ejemplo: organismo de estudio, tipo de datos, nivel de profundidad esperado.
+3. **Tarea**: Indica explícitamente qué debe hacer la IA.
+Por ejemplo: resumir, comparar, buscar información, listar pasos.
+4. **Restricciones**: Establece límites: formato, extensión, tipo de fuentes, lenguaje técnico o divulgativo.
+5. **Salida esperada**: Describe la estructura del resultado: lista, tabla, párrafo, viñetas, pasos numerados.
+6. **Criterios de verificación**: Define cómo se evaluará la calidad de la respuesta.
+
+Estos componentes no siempre aparecen explícitos en el texto final del prompt, pero deben estar presentes en el razonamiento del diseñador.
+
+
+### El prompt como diseño de instrucciones
+
+Una idea central de este curso es que el *prompting* no consiste en “preguntar mejor”, sino en **diseñar instrucciones**.
+
+Diseñar un prompt implica tomar decisiones conscientes sobre:
+
+- Qué información se proporciona.
+- Qué se espera exactamente como resultado.
+- Qué límites existen.
+- Cómo se evaluará la respuesta.
+
+Desde esta perspectiva, un prompt se asemeja más a un **protocolo**, una **especificación** o un **instructivo técnico** que a una pregunta informal.
+
+
+
+
+## 5. Tipos y técnicas básicas de prompting
+
+En este capítulo se introducen solo los tipos de prompting que serán utilizados a lo largo del curso.
+
+### 5.1 Técnicas básicas (fundacionales)
+
+#### A) Prompting directo (zero-shot)
+
+Consiste en dar una instrucción sin ejemplos previos. 
+
+**Ejemplo (bioinformática):**
+
+> Resume la función del gen *lacZ* en *Escherichia coli*.
+
+
+Este tipo de prompting es útil para tareas simples, pero arriesgado cuando:
+
+- el nivel de detalle no está claro,
+- el contexto es complejo,
+- o se requiere precisión científica.
+
+
+
+#### B) Prompting con ejemplos (few-shot)
+
+Se proporcionan uno o más ejemplos para guiar el formato y el criterio de la respuesta. 
+
+**Ejemplo (resumen científico):**
+
+> “Resume el siguiente texto en no más de 5 líneas, destacando objetivo y conclusión.
+
+> Ejemplo:
+> Texto: ‘Este estudio analiza…’
+> Resumen: ‘El estudio investiga…’
+
+> Texto a resumir: …”
+
+
+Este enfoque es especialmente útil en ciencia para :
+
+- controlar el formato,
+- mantener consistencia,
+- reducir interpretaciones erróneas.
+
+
+
+#### C) Prompting paso a paso (multi-step)
+
+En este contexto, multi-step prompting se refiere a la división explícita de la tarea en pasos, no a la exposición del razonamiento interno del modelo.
+
+
+**Ejemplo (búsqueda de información científica):**
+
+> Primero identifica conceptos clave sobre regulación génica en *E. coli*.  
+> Luego, lista bases de datos relevantes.  
+> Finalmente, resume qué tipo de información aporta cada base de datos.
+
+
+Este tipo de prompting es fundamental para:
+
+- tareas complejas,
+- razonamiento estructurado,
+- reducción de errores y alucinaciones.
+
+
+
+
+### 5.2 Técnicas básicas de estructuración
+
+Además de los tipos de prompting basados en la cantidad de ejemplos o en la secuencia de pasos, existen técnicas básicas orientadas a **estructurar la instrucción y la salida**, sin modificar el razonamiento del modelo.
+
+#### A) Role prompting
+
+El *role prompting* consiste en asignar explícitamente un rol al modelo (por ejemplo, analista, tutor, asistente técnico) para orientar el tipo de respuesta esperada.
+
+El rol no garantiza conocimiento especializado, pero ayuda a **acotar el estilo, nivel de detalle y enfoque** de la respuesta.
+
+**Ejemplo:**
+
+> “Actúa como un asistente académico y explica brevemente la función de un microARN en *Mus musculus*.”
+
+
+
+#### B) Format-constrained prompting
+
+El *format-constrained prompting* consiste en definir de forma explícita el **formato de salida** que debe tener la respuesta, como listas, tablas o esquemas.
+
+Esta técnica facilita la **lectura, comparación y reutilización** de la información generada.
+
+**Ejemplo:**
+
+> “Presenta la información en una tabla con las columnas: función, evidencia experimental y referencia.”
+
+
+
+
+## 6. Ejemplos aplicados a ciencia y bioinformática
+
+### 6.1 Resumen científico
+
+**Prompt poco definido:**
+
+> Resume este artículo.
+
+**Problemas principales:**  
+
+- No se especifica extensión
+- No se define enfoque
+- No hay criterios de calidad
+
+
+**Prompt estructurado:**
+
+> Actúa como asistente de investigación en bioinformática. Resume el siguiente texto en un máximo de 150 palabras, destacando objetivo, metodología y resultados principales. Utiliza lenguaje técnico y evita interpretaciones no respaldadas por el texto.
+
+
+
+### 6.2 Búsqueda de información científica
+
+**Prompt vago**:
+
+> Busca información sobre miARN.
+
+**Prompt mejor definido:**
+
+> Identifica fuentes confiables sobre microARN en *Mus musculus*. Prioriza bases de datos especializadas y artículos de revisión. Presenta los resultados en una lista con una breve descripción de cada fuente.
+
+
+
+### 6.3 Planteamiento de preguntas científicas
+
+**Prompt vago**:
+
+> ¿Qué significa este resultado?
+
+**Prompt mejor definido:**
+
+> "Actúa como asesor científico.
+Dado el siguiente resultado experimental, plantea tres posibles interpretaciones, indicando supuestos y limitaciones de cada una.”
+
+
+
+
+## 7. Ejercicios
+
+::: {.exercise-box}
+### Ejercicio 1.1 (Obligatorio) — De pregunta vaga a prompt estructurado
+
+**Objetivo:** Identificar problemas en instrucciones vagas y rediseñarlas como prompts estructurados.
+
+**Instrucciones:**
+
+1. Identifica al menos tres problemas del siguiente prompt:
+   > “Resume este texto sobre regulación génica.”
+2. Rediseña la instrucción como un prompt estructurado que incluya:
+   - rol,
+   - contexto,
+   - tarea,
+   - restricciones,
+   - salida esperada.
+3. Explica brevemente cómo tu versión mejora la claridad de la instrucción original.
+
+> **Nota:** No es necesario ejecutar el prompt; se evaluará únicamente el diseño y la explicación.
+
+**Entregable**
+
+- Texto en Markdown que incluya:
+  - lista de problemas identificados,
+  - prompt rediseñado,
+  - explicación breve (5–8 líneas).
+
+
+:::
+
+::: {.exercise-box}
+### Ejercicio 1.2 (Obligatorio) — Prompting aplicado a una tarea científica
+
+**Objetivo:** Aplicar prompting estructurado en un contexto científico.
+
+**Escenario**
+
+Necesitas apoyo para recopilar información introductoria sobre un tema científico.
+
+**Instrucciones:**
+
+Diseña un prompt para obtener información sobre microARN en *Mus musculus*. 
+
+El prompt debe:
+
+- especificar el tipo de fuentes deseadas (por ejemplo, bases de datos especializadas o artículos de revisión),
+- definir claramente el formato de la salida,
+- incluir suficiente contexto para orientar la respuesta.
+
+Incluye una breve explicación de las decisiones de diseño tomadas.
+
+> **Nota:** No se evaluará el contenido de la respuesta, sino la claridad y estructura del prompt.
+
+**Entregable**
+
+- Prompt completo
+- Breve explicación (máx. 150 palabras) que describa:
+  - los componentes incluidos,
+  - el propósito de cada uno dentro del prompt.
+:::
+
+::: {.exercise-box}
+### Ejercicio 1.3 (Opcional) — Comparación de tipos de prompting
+
+**Objetivo:** Distinguir entre distintos tipos de prompting y su aplicación práctica.
+
+**Instrucciones:**
+
+Para la siguiente tarea:
+
+> “Explicar la función de un gen en un organismo modelo”
+
+1. Propón:
+   - un prompt zero-shot,
+   - un prompt few-shot.
+2. Explica brevemente:
+   - en qué tipo de situación usarías cada uno,
+   - qué diferencias prácticas existen entre ambos enfoques.
+
+**Entregable**
+
+- Dos prompts (zero-shot y few-shot),
+- Comparación escrita (8–12 líneas).
+
+
+
+:::
+## Rúbrica de evaluación — Capítulo 1  
+*Introducción al Prompting: conceptos y prácticas fundamentales*
+
+### Criterios generales
+- No se evalúa la ejecución del prompt.
+- No se evalúa la veracidad del contenido generado.
+- Se evalúa únicamente el **diseño, claridad y estructura del prompt**.
+
+
+
+### Ejercicio 1.1 — De pregunta vaga a prompt estructurado (40%)
+
+| Criterio | Excelente (100%) | Adecuado (75%) | Insuficiente (50% o menos) |
+|--------|------------------|----------------|-----------------------------|
+| Identificación de problemas (15%) | Identifica ≥3 problemas claros y bien explicados | Identifica 2–3 problemas con explicación limitada | Identifica ≤1 problema o sin explicación |
+| Estructura del prompt (15%) | Incluye todos los componentes solicitados de forma clara | Incluye la mayoría de los componentes | Componentes incompletos o confusos |
+| Claridad de la instrucción (10%) | La instrucción es clara, específica y no ambigua | La instrucción es parcialmente clara | La instrucción sigue siendo vaga |
+
+
+
+### Ejercicio 1.2 — Prompting aplicado a una tarea científica (40%)
+
+| Criterio | Excelente (100%) | Adecuado (75%) | Insuficiente (50% o menos) |
+|--------|------------------|----------------|-----------------------------|
+| Contexto científico (15%) | El contexto es claro y apropiado para la tarea | Contexto presente pero poco específico | Contexto ausente o irrelevante |
+| Componentes del prompt (15%) | Todos los componentes están presentes y bien definidos | Componentes presentes pero incompletos | Componentes ausentes o mal definidos |
+| Explicación del diseño (10%) | Explica claramente el propósito de cada componente | Explicación general o incompleta | Explicación ausente o incorrecta |
+
+
+
+### Ejercicio 1.3 (Opcional) — Comparación de tipos de prompting (20% extra o bono)
+
+| Criterio | Excelente | Adecuado | Insuficiente |
+|--------|----------|----------|--------------|
+| Uso correcto de zero-shot y few-shot | Ambos prompts están bien diferenciados | Diferencias poco claras | Tipos confundidos |
+| Comparación técnica | Explica diferencias prácticas con claridad | Comparación superficial | Sin comparación real |
+
+
+
+### Criterios transversales (aplican a todos los ejercicios)
+
+| Aspecto | Evaluación |
+|------|-----------|
+| Claridad de redacción | Uso adecuado del lenguaje técnico |
+| Organización | Entregables completos y bien estructurados |
+| Formato | Cumple con el formato solicitado (Markdown) |
+
+
+
+### Escala sugerida
+- 90–100: Dominio sólido de los conceptos introductorios de prompting.
+- 70–89: Comprensión adecuada con áreas de mejora.
+- <70: Comprensión insuficiente de los fundamentos.
+
+
+
+## Cierre del capítulo
+
+Este capítulo se centra en cómo formular instrucciones, no en cómo evaluar el conocimiento generado. Se introdujeron los **conceptos y prácticas fundamentales del prompting**, entendiendo el prompt como una **instrucción escrita** diseñada para interactuar de manera controlada con un modelo de lenguaje.
+
+Se revisaron los **componentes básicos de un prompt**, así como los **principales tipos de prompting** (zero-shot, few-shot y multi-step), junto con ejemplos sencillos que ilustran su aplicación en tareas científicas y técnicas. El objetivo fue desarrollar una **alfabetización inicial** en el diseño de prompts claros y estructurados.
+
+Es importante subrayar que **escribir un prompt no equivale a razonar científicamente ni a validar conocimiento**. En este capítulo, el énfasis estuvo en el *cómo* formular instrucciones, no en el *cuándo* o *bajo qué criterios* es adecuado utilizar modelos de lenguaje en procesos de generación de conocimiento.
+
+En la siguiente sesión se abordará este nivel más profundo de análisis, explorando los **límites, supuestos y responsabilidades** asociados al uso de inteligencia artificial en contextos científicos y académicos.
+
+
+
+## Referencias
+
+- Quintero-Barrent G., López de Ramos AL, Esteves Gonzáles Y. Manual de Buenas prácticas en la escritura de prompts. ISBN: 978-9962-8606-5-5. Julio 2025.
+- Prompt Engineering Guide by DAIR.IA 2025 https://www.promptingguide.ai/es
