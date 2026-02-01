@@ -15,7 +15,7 @@ website:
   favicon: assets/images/favicon.png
   
   open-graph:
-    title: "Course Title"
+    title: "Prompting Científico con Inteligencia Artificial"
     description: "Course description"
     image: assets/images/og-image.png
   

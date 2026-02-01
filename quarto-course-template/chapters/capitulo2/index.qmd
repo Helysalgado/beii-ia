@@ -1,0 +1,686 @@
+---
+title: "Prompting Científico"
+subtitle: "Anatomía y práctica del prompt verificable"
+date: last-modified
+description: "Aprende a formular prompts científicos con estructura, contexto y criterios de verificación"
+categories: [prompting, metodología, ciencia]
+format:
+  html:
+    include-in-header:
+      - text: |
+          <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+          <script>mermaid.initialize({ startOnLoad: true });</script>
+
+---
+
+## Introducción
+
+En el **Capítulo 1** se definió el *prompt* como una **instrucción escrita**: una interfaz de diseño que condiciona la generación del modelo y delimita su salida. En este capítulo damos el siguiente paso metodológico: **cómo convertir esa instrucción en un instrumento científicamente evaluable**.
+
+Aquí se introduce el **prompting científico**, entendido como el diseño de prompts **contextualizados, acotados y verificables**, orientados a producir salidas **controlables, reproducibles y evaluables por criterios externos**. Este capítulo no asume que la IA valide conocimiento; por el contrario, establece **cómo el diseño del prompt habilita la verificación humana**.
+
+Este enfoque articula cuatro competencias del curso:   
+
+- **2.1 Prompting Científico** (diseño de instrucciones justificadas),
+- **2.2 Pensamiento Crítico** (evaluar y cuestionar salidas),
+- **2.3 Metodología y Rigor** (reproducibilidad y trazabilidad),
+- **2.4 Desarrollo Asistido por IA** (uso metodológico en proyectos técnicos).
+
+
+
+## Prompting Creativo vs Científico: Comparación Detallada
+
+### 🧠 Prompting Creativo
+
+> Abierto, ambiguo, exploratorio
+
+**Es bueno aplicarlo cuando:**
+
+1. **No sabes aún qué estás buscando**
+   - Fase de ideas o lluvia de ideas
+   - Generación de hipótesis o metáforas
+
+2. **Quieres ampliar el espacio de posibilidades**
+   - Diseño conceptual, narrativas, enfoques alternativos
+   - Útil para romper marcos rígidos o sesgos previos
+
+3. **El valor está en la originalidad, no en la verificabilidad inmediata**
+   - Ensayos teóricos, pensamiento especulativo, divulgación, docencia creativa
+
+4. **Trabajas con sistemas complejos mal definidos**
+   - Sistemas biológicos, sociales o simbólicos aún no formalizados
+
+
+**Ejemplo**:
+
+```markdown
+Explora analogías entre regulación genética y lenguajes simbólicos.
+```
+
+::: {.callout-warning}
+
+## Riesgos del Prompting Creativo
+
+- Genera respuestas plausibles pero no falsables
+- Favorece la sobreinterpretación y analogías engañosas
+- No es adecuado para decisiones técnicas o conclusiones formales
+
+:::
+
+
+
+### 🔬 Prompting Científico
+
+> Contextualizado, acotado, verificable
+
+**Es bueno aplicarlo cuando:**
+
+1. **La pregunta está bien definida**
+   - Variables claras, dominio específico, objetivo explícito
+
+2. **Necesitas precisión, trazabilidad y control de supuestos**
+   - Revisión de literatura, análisis de datos, validación de hipótesis
+
+3. **El resultado debe ser evaluable por criterios externos**
+   - Reproducibilidad, referencias, consistencia lógica, datos observables
+
+4. **Estás en fase de convergencia**
+   - Refinar, comparar, decidir, escribir resultados, diseñar experimentos
+
+**Ejemplo**:
+
+```markdown
+Resume los mecanismos de regulación transcripcional del operón lac en *E. coli* según RegulonDB.
+```
+
+
+::: {.callout-caution}
+
+## Riesgos del Prompting Científico
+
+- Cierra prematuramente el espacio de exploración
+- Reproduce sesgos del marco inicial si este es incorrecto
+- Limita las ideas nuevas
+
+:::
+
+
+
+### Regla Clave: Fase del Proceso Cognitivo
+
+::: {.callout-tip}
+
+## Guía de Decisión
+
+| Fase del Trabajo | → Tipo de Prompting |
+|------------------|---------------------|
+| Exploración | → Creativo |
+| Generación de hipótesis | → Creativo → Científico |
+| Formalización | → Científico |
+| Análisis / validación | → Científico |
+| Síntesis conceptual | → Mixto |
+| Comunicación (según audiencia) | → Creativo o Mixto |
+
+:::
+
+
+::: {.callout-important}
+## Criterio Práctico Rápido
+
+Antes de escribir un prompt, pregúntate:
+
+**"¿Busco sorprenderme o comprobar algo?"**
+
+- **Sorprenderme** → Prompting creativo
+- **Comprobar, justificar, medir** → Prompting científico
+
+:::
+
+
+
+## Ejemplos Prácticos: Creativo vs Científico
+
+### Regulación Genética
+
+::: {.panel-tabset}
+
+## Prompt Creativo
+
+```text
+Imagina la regulación genética como un sistema de toma de decisiones.
+
+¿Qué metáforas o estructuras abstractas ayudan a entender cómo una célula
+elige entre múltiples programas de expresión?
+```
+
+**Uso**: Exploración conceptual, generación de analogías para enseñanza
+
+## Prompt Científico
+
+```text
+Describe los mecanismos de regulación transcripcional dependientes de
+factores sigma en E. coli, indicando condiciones de activación y genes regulados,
+según la evidencia experimental reportada.
+```
+
+**Uso**: Revisión técnica, preparación de materiales de curso
+
+:::
+
+### Expresión diferencial (RNA-seq)
+
+::: {.panel-tabset}
+
+## Prompt creativo
+
+```text
+Si la expresión diferencial fuera un lenguaje de estados celulares,
+¿qué patrones podrían emerger entre tejido sano y canceroso?
+```
+
+
+## Prompt Científico
+
+```text
+Diseña un pipeline conceptual de análisis de expresión diferencial
+entre leucemia y controles usando DESeq2.
+Define criterios (FDR, |log2FC|), sin ejecutar código ni inventar resultados.
+```
+:::
+
+### Interpretación de resultados ómicos
+
+::: {.panel-tabset}
+
+## Prompt Creativo
+
+```text
+Explora narrativas funcionales que conecten genes sobreexpresados
+con procesos adaptativos celulares.
+```
+
+## Prompt Científico
+
+```text
+Propón un análisis de enriquecimiento GO (BP) para genes sobreexpresados,
+indicando criterios de significancia y verificación.
+```
+:::
+
+## Anatomía de un Buen Prompt Científico
+
+Un **prompt científico** funciona como un **protocolo experimental escrito**: explicita *qué se quiere*, *bajo qué supuestos* y *cómo se evaluará*. Este esquema **extiende** el modelo de cinco componentes del Capítulo 1 incorporando **VERIFICACIÓN** como sexto elemento.
+
+::: {.callout-important}
+## Componentes Esenciales
+
+Todo prompt científico debe incluir:
+
+1. **ROLE** - Rol de la IA
+2. **CONTEXTO** - Datos y objetivo biológico
+3. **TAREA** - Qué se quiere que haga la IA
+4. **RESTRICCIONES** - Límites explícitos
+5. **SALIDA ESPERADA** - Formato del resultado
+6. **VERIFICACIÓN** - Cómo validar la respuesta
+
+:::
+
+
+### ROLE — Rol de la IA
+Define perspectiva y nivel esperado.   
+- Evita generalidades.   
+- Ajusta profundidad.
+
+### CONTEXTO — Datos y objetivo   
+Delimita información disponible y propósito biológico.   
+- Evita supuestos inexistentes.   
+
+### TAREA — Instrucción central   
+Debe ser evaluable.   
+- *Describe* ≠ *analiza* ≠ *decide*.
+
+### SALIDA ESPERADA — Formato   
+Facilita evaluación y comparación.   
+- Listas, tablas, secciones.
+
+### RESTRICCIONES — Límites epistemológicos y operativos
+
+Las **restricciones** en un prompt científico no son únicamente reglas operativas
+(p. ej. “no ejecutes código”), sino **restricciones epistemológicas**: establecen
+qué tipo de afirmaciones están permitidas y cuáles quedan excluidas del espacio
+de generación del modelo.
+
+Su función es **preventiva**: actúan **antes de la respuesta**, acotando el
+espacio de generación y evitando que la IA produzca afirmaciones no justificadas,
+no contrastadas o presentadas con un grado de certeza indebido.
+
+Las restricciones **no validan el contenido** ni garantizan corrección científica.
+Su papel es **limitar lo que la IA puede afirmar**, reduciendo el riesgo de
+alucinaciones, extrapolaciones indebidas o inferencias presentadas como hechos.
+
+**Función:** preventiva  
+**Momento:** antes de la respuesta
+
+
+**Ejemplos de restricciones epistemológicas explícitas:**
+
+- “No afirmes causalidad si solo hay evidencia correlacional.”
+- “No extrapoles más allá del dominio de los datos proporcionados.”
+- “No presentes inferencias o modelos como hechos establecidos.”
+- “No inventes resultados, cifras ni mecanismos no respaldados.”
+- “Declara explícitamente los supuestos necesarios para cada afirmación.”
+
+
+**Ejemplos de restricciones operativas complementarias:**
+
+- “No ejecutes código.”
+- “No simules resultados experimentales.”
+- “Limita la respuesta a razonamiento conceptual.”
+
+
+Las restricciones epistemológicas **no garantizan que la respuesta sea correcta**,
+pero preparan el terreno para una evaluación y validación humanas posteriores.
+
+
+### 🧩 VERIFICACIÓN — Validación humana y control epistemológico
+
+La **verificación** es el componente que distingue de manera más clara al
+*prompting científico* de otras formas de interacción con IA. No implica que
+la IA “verifique” su propia respuesta, sino que el **prompt esté diseñado de
+forma que un humano pueda evaluar la validez, confiabilidad y alcance de lo
+generado**.
+
+Incluir verificación en un prompt significa anticipar explícitamente
+los **criterios mediante los cuales** se evaluarán las afirmaciones producidas:
+
+- cómo se contrastarán las afirmaciones,
+- qué tipo de evidencia sería necesaria para sostenerlas,
+- y bajo qué condiciones deberían considerarse inválidas o incompletas.
+
+La verificación convierte una respuesta textual en **un objeto evaluable por
+criterios externos al modelo**, no en conocimiento automático.
+
+**Funciones clave de la verificación:**
+
+- Delimitar qué afirmaciones son empíricas, inferenciales o especulativas.
+- Evitar que respuestas plausibles se interpreten como conocimiento validado.
+- Hacer explícitos los límites de validez y los supuestos involucrados.
+- Facilitar reproducibilidad y trazabilidad del razonamiento.
+
+
+**Ejemplos de mecanismos de verificación que pueden exigirse en un prompt:**
+
+- “Indica las fuentes primarias o bases de datos donde pueda verificarse cada afirmación.”
+- “Describe cómo cada afirmación podría contrastarse con evidencia experimental disponible.”
+- “Distingue claramente entre evidencia directa, inferencia y especulación.”
+- “Discute la validez y confiabilidad de la evidencia citada, indicando sus limitaciones.”
+- “Si no existe evidencia suficiente, indícalo explícitamente.”
+- “Describe cómo un humano podría comprobar cada punto usando herramientas estándar.”
+
+**Ejemplos de verificación operativa complementaria:**
+
+- Sanity checks conceptuales (evaluaciones básicas de coherencia biológica y lógica).
+- Comparación con literatura de referencia.
+- Revisión cruzada con bases de datos especializadas.
+- Replicación conceptual del razonamiento bajo supuestos alternativos.
+
+
+::: {.callout-note}
+**Sanity checks conceptuales**: verificaciones preliminares realizadas por un
+**humano (lector, estudiante o investigador)** para evaluar la coherencia lógica
+y biológica de una afirmación generada por la IA, antes de contrastarla con
+evidencia formal.
+
+**Ejemplos:**
+- Si una respuesta afirma que un gen *regula directamente* a otro basándose solo
+  en datos de expresión, un sanity check consiste en preguntarse si ese tipo de
+  datos permite inferir regulación o únicamente asociación.
+- Si se propone una función génica a partir de homología, un sanity check es
+  verificar si se está asumiendo función sin evidencia funcional directa.
+:::
+
+
+La verificación **no garantiza que una respuesta sea correcta**, pero sí garantiza
+que **pueda ser cuestionada, contrastada y eventualmente refutada**, lo cual es una
+condición esencial del conocimiento científico.
+
+
+
+#### Anti‑ejemplo: cuando “pedir verificación” no sirve
+
+El siguiente prompt **parece** científico porque menciona verificación, pero en realidad **no hace posible** evaluar la validez de la respuesta:
+
+```text
+Explica la regulación génica en bacterias.
+Asegúrate de que sea correcta y esté científicamente validada.
+```
+
+**¿Por qué es un anti‑ejemplo?**
+
+- No especifica **qué significa** “correcta”.
+- No indica **qué fuentes** usar ni cuáles serían aceptables.
+- No define **qué tipo de evidencia** se espera (experimental, computacional, revisión).
+- No permite distinguir entre hechos establecidos, inferencias o generalizaciones.
+- Traslada implícitamente la responsabilidad de validación a la IA.
+
+El uso de frases como *“asegúrate de que sea correcto”* o *“solo si está científicamente validado”* **no introduce verificación por sí mismo** si no se acompaña de criterios explícitos.
+
+
+#### Versión corregida del mismo prompt
+
+```text
+ROLE:
+Actúa como asistente en genética molecular.
+
+CONTEXTO:
+El interés es una descripción introductoria de regulación génica bacteriana
+para estudiantes de licenciatura.
+
+TAREA:
+Describe los principales mecanismos de regulación génica en bacterias.
+
+RESTRICCIONES (epistemológicas):
+- Incluye únicamente mecanismos ampliamente aceptados en la literatura.
+- Distingue entre evidencia experimental directa y modelos generales.
+- Si existen excepciones o debates, indícalos explícitamente.
+
+SALIDA ESPERADA:
+Texto estructurado en secciones con subtítulos.
+
+VERIFICACIÓN:
+- Indica revisiones o libros de texto donde pueda verificarse cada mecanismo.
+- Explica cómo un lector podría contrastar la información presentada.
+```
+
+En esta versión, la **verificación no es una declaración retórica**, sino una **condición operativa** que permite al lector evaluar y contrastar la respuesta.
+
+
+
+
+### Cuadro comparativo: Restricciones vs. Verificación
+
+| Dimensión | Restricciones | Verificación |
+|---------|---------------|--------------|
+| Naturaleza | Preventiva | Evaluativa |
+| Momento de acción | Antes de la respuesta | Después de la respuesta |
+| Función principal | Limitar lo que la IA puede afirmar | Permitir juzgar la validez de lo afirmado |
+| Pregunta clave | ¿Qué NO puede decir la IA? | ¿Cómo sé si esto es confiable? |
+| Rol epistemológico | Acota el espacio de generación | Habilita evaluación y refutación |
+| Garantiza corrección | ❌ No | ❌ No |
+| Garantiza evaluabilidad | ⚠️ Parcialmente | ✅ Sí |
+| Actor principal | Diseño del prompt | Humano (lector/investigador) |
+| Relación con la IA | Condiciona la generación | No la modifica, la examina |
+
+
+```mermaid
+flowchart LR
+    A["Restricciones"] --> B["Generación:Salida de la IA"]
+    B --> C["Verificación: Criterios y mecanismos"]
+    C --> D["Juicio humano:Aceptar, cuestionar o refutar"]
+```
+
+::: {.callout-important}
+> *Un buen prompt no es para que la IA responda, sino para que tú puedas **evaluar, verificar y reproducir** la respuesta.*
+>
+> *El prompt es tu hipótesis escrita.*
+:::
+
+
+
+::: {.callout-tip}
+## Discusión
+
+¿Qué diferencia hay entre una respuesta convincente y una verificable?
+
+:::
+
+## Mensaje Clave
+
+::: {.callout-important}
+## Recuerda
+
+> *Un buen prompt no es para que la IA responda, sino para que tú puedas **evaluar, verificar y reproducir** la respuesta.*
+
+> *El prompt es tu hipótesis escrita. La respuesta no es tuya hasta que la validas.*
+
+:::
+
+
+
+## Errores Frecuentes en Genética al Usar IA
+
+::: {.callout-warning}
+## Confusiones Conceptuales Comunes
+
+- **Homología ≠ función**
+- **Coexpresión ≠ regulación directa**
+- **Motivo encontrado ≠ regulador real**
+- **Significativo estadístico ≠ biológicamente relevante**
+
+Estos errores se amplifican con prompts mal formulados y pueden detectarse
+mediante **sanity checks conceptuales** básicos, en los que un humano evalúa si
+las afirmaciones respetan las distinciones fundamentales del dominio biológico.
+
+:::
+
+
+
+## Ejemplos de Prompts: Buenos y Malos
+
+### ❌ Ejemplo 1: Prompt Mal Hecho
+
+```text
+Analiza este FASTA y dime si está bien.
+```
+
+**Problemas detectables:**
+- ¿Qué FASTA?
+- ¿Qué significa "bien"?
+- ¿Qué criterios de calidad?
+- ¿Cómo se verifica la respuesta?
+
+::: {.callout-warning}
+## Conclusión
+
+Este prompt no es científico: es vago e irreproducible.
+
+:::
+
+
+
+### ⚠️ Ejemplo 2: Prompt Aceptable (Pero Mejorable)
+
+```text
+Tengo un archivo FASTA con secuencias de DNA.
+Analiza su calidad y dime si sirve para análisis posteriores.
+```
+
+**Aspectos positivos:**
+- Hay contexto
+- Hay intención analítica
+
+**Deficiencias:**
+- No define criterios de calidad
+- No limita invención de resultados
+- No pide verificación
+
+
+
+### ✅ Ejemplo 3: Prompt Científico Correcto
+
+```text
+ROLE:
+Eres un asistente experto en bioinformática y análisis de secuencias.
+
+CONTEXTO:
+Tengo un archivo FASTA con secuencias de DNA (longitud variable, sin calidad PHRED).
+El objetivo es evaluar si los datos son adecuados para análisis posteriores
+como descubrimiento de motivos o conteo de k-mers.
+
+TAREA:
+Describe qué métricas de calidad revisarías en este FASTA
+y qué problemas potenciales podrían afectar el análisis.
+
+RESTRICCIONES:
+- No ejecutes código.
+- No inventes resultados.
+- Si falta información, indícalo explícitamente.
+- Limítate a razonamiento conceptual.
+
+SALIDA ESPERADA:
+- Lista de métricas de calidad
+- Posibles problemas asociados
+- Recomendaciones generales
+
+VERIFICACIÓN:
+Indica cómo un humano podría verificar cada métrica usando herramientas estándar.
+```
+
+::: {.callout-success}
+## ¿Por qué es buen prompt científico?
+
+- ✓ Se puede verificar cada punto
+- ✓ Evita alucinaciones
+- ✓ Proporciona criterios claros
+- ✓ Es reproducible
+
+:::
+
+
+
+### ⭐⭐⭐ Ejemplo 4: Prompt con Estructura Científica Avanzada
+
+```text
+ROLE:
+Actúa como bioinformático senior enfocado en reproducibilidad.
+
+CONTEXTO:
+Archivo FASTA de DNA genómico (organismo bacteriano).
+Planeo usarlo para análisis de motivos regulatorios.
+
+TAREA:
+Propón un checklist de control de calidad previo al análisis,
+explicando por qué cada punto es relevante biológicamente.
+
+RESTRICCIONES:
+- No asumas datos que no se mencionan.
+- No generes cifras.
+- Declara supuestos explícitamente.
+
+FORMATO DE SALIDA:
+Tabla con columnas:
+1) Métrica
+2) Justificación biológica
+3) Herramienta típica de verificación
+
+VERIFICACIÓN:
+Incluye una sección final titulada:
+"Cómo un humano podría validar estas recomendaciones".
+```
+
+::: {.callout-success}
+## Excelencia Científica
+
+> *Esto es pensar como científico, no como usuario de IA.*
+
+:::
+
+
+
+## Ejercicio en Clase: Mini-Debate
+
+::: {.exercise-box}
+### Debate: Correlación, Causalidad y Evidencia
+
+**Prompt a analizar:**
+
+```text
+ROLE:
+Eres un asistente experto en bioinformática.
+
+CONTEXTO:
+Tengo datos de expresión génica bajo dos condiciones.
+
+TAREA:
+Determina si el gen X regula al gen Y.
+```
+
+**Organización (10–15 minutos):**
+
+Dividir al grupo en dos equipos:
+- **Equipo A**: "Con estos datos **sí** se puede afirmar que X regula a Y"
+- **Equipo B**: "Con estos datos **no** se puede afirmar regulación"
+
+**Preguntas guía:**
+- ¿Qué evidencia real aportan los datos de expresión?
+- ¿Qué afirmaciones **no** se pueden sostener?
+- ¿Qué experimentos o datos adicionales serían necesarios?
+- ¿Qué riesgos hay al usar lenguaje causal sin evidencia?
+
+:::
+
+::: {.callout-important}
+## Mensaje del Debate
+
+> *Los datos responden solo a las preguntas que fueron diseñados para responder.*
+
+**Discusión crítica:**
+
+Este prompt **confunde correlación con causalidad**. Los datos de expresión génica solo permiten observar asociaciones estadísticas, no regulación directa.
+
+**Conexión con Machine Learning:**
+- Los modelos aprenden a **predecir** patrones
+- **No aprenden causalidad biológica** por sí mismos
+- En clases posteriores entrenarán modelos predictivos
+- **No demostrarán causalidad**, solo capacidad predictiva
+
+:::
+
+::: {.callout-warning}
+## Advertencia Formativa
+
+> *Un modelo puede predecir muy bien y aun así estar científicamente equivocado.*
+
+Confundir predicción con causalidad puede llevar a:
+- Malas interpretaciones biológicas
+- Conclusiones exageradas
+- Errores en diseño experimental
+
+:::
+
+
+
+## Resumen
+
+Has aprendido:
+
+- ✓ La diferencia fundamental entre prompting creativo y científico
+- ✓ Cuándo usar cada tipo según la fase del proceso cognitivo
+- ✓ Los 6 componentes esenciales de un prompt científico
+- ✓ Cómo identificar y evitar prompts deficientes
+- ✓ La importancia de distinguir correlación de causalidad
+
+
+
+::: {.chapter-nav}
+
+::: {.chapter-nav-item .chapter-nav-prev}
+::: {.chapter-nav-label}
+Anterior
+:::
+::: {.chapter-nav-title}
+Introducción al Prompting
+:::
+:::
+
+::: {.chapter-nav-item .chapter-nav-next}
+::: {.chapter-nav-label}
+Siguiente
+:::
+::: {.chapter-nav-title}
+Patrones Avanzados
+:::
+:::
+
+:::
+

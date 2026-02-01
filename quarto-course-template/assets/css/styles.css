@@ -445,12 +445,30 @@ figure {
 }
 
 figcaption {
-  margin-top: var(--space-md);
-  font-size: var(--text-sm);
-  font-style: italic;
-  color: var(--color-info);
-  text-align: center;
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid rgba(46, 52, 64, 0.15);
+
+  font-family: var(--font-body);
+  /* font-size: var(--text-xs); */
+  font-size: 0.78rem;   /* ≈ entre text-xs y text-sm */
+  line-height: 1.4;
+  color: rgba(46, 52, 64, 0.8);
+
+  font-style: normal;
+  text-align: left;
+
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+figcaption .quarto-figure-number {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1em;   /* mantiene el tamaño pequeño */
+}
+
 
 /* ===================================
    TABLES
