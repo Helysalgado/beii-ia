@@ -412,12 +412,6 @@ En esta versión, la **verificación no es una declaración retórica**, sino un
 | Relación con la IA | Condiciona la generación | No la modifica, la examina |
 
 
-```mermaid
-flowchart LR
-    A["Restricciones"] --> B["Generación:Salida de la IA"]
-    B --> C["Verificación: Criterios y mecanismos"]
-    C --> D["Juicio humano:Aceptar, cuestionar o refutar"]
-```
 
 ::: {.callout-important}
 > *Un buen prompt no es para que la IA responda, sino para que tú puedas **evaluar, verificar y reproducir** la respuesta.*
